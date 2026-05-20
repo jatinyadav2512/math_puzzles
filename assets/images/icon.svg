@@ -1,0 +1,40 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1020"/>
+      <stop offset="100%" stop-color="#1A1B33"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Text: Math -->
+  <text
+    x="512"
+    y="460"
+    font-family="Inter, sans-serif"
+    font-weight="600"
+    font-size="180"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="-4"
+  >Math</text>
+
+  <!-- Text: Puzzles -->
+  <text
+    x="512"
+    y="650"
+    font-family="Inter, sans-serif"
+    font-weight="600"
+    font-size="180"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="-4"
+  >Puzzles</text>
+</svg>

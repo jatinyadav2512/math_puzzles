@@ -1,0 +1,77 @@
+[
+  {
+    "id": "tri_sample_01",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 21,
+    "displayType": "trianglePattern",
+    "triangles": [
+      {"left": 5, "right": 3, "bottom": 8},
+      {"left": 7, "right": 2, "bottom": 9},
+      {"left": 4, "right": 6, "bottom": null}
+    ],
+    "answer": 10,
+    "hint": "How does the bottom number relate to the two top numbers?",
+    "explanation": "Pattern: bottom = left + right. So 4 + 6 = 10."
+  },
+  {
+    "id": "tri_sample_02",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 22,
+    "displayType": "trianglePattern",
+    "triangles": [
+      {"left": 3, "right": 10, "bottom": 7},
+      {"left": 5, "right": 12, "bottom": 7},
+      {"left": 4, "right": 11, "bottom": null}
+    ],
+    "answer": 7,
+    "hint": "Subtract one of the top numbers from the other.",
+    "explanation": "Pattern: bottom = right − left. So 11 − 4 = 7."
+  },
+  {
+    "id": "tri_sample_03",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 21,
+    "displayType": "trianglePattern",
+    "triangles": [
+      {"left": 2, "right": 3, "bottom": 6},
+      {"left": 4, "right": 5, "bottom": 20},
+      {"left": 3, "right": 7, "bottom": null}
+    ],
+    "answer": 21,
+    "hint": "Try multiplying the two top numbers.",
+    "explanation": "Pattern: bottom = left × right. So 3 × 7 = 21."
+  },
+  {
+    "id": "tri_sample_04",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 22,
+    "displayType": "trianglePattern",
+    "triangles": [
+      {"left": 5, "right": 10, "bottom": 2},
+      {"left": 4, "right": 32, "bottom": 8},
+      {"left": 4, "right": 20, "bottom": null}
+    ],
+    "answer": 5,
+    "hint": "Divide the larger top number by the smaller one.",
+    "explanation": "Pattern: bottom = right ÷ left. So 20 ÷ 4 = 5."
+  },
+  {
+    "id": "tri_sample_05",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 21,
+    "displayType": "trianglePattern",
+    "triangles": [
+      {"left": 2, "right": 3, "bottom": 10},
+      {"left": 4, "right": 1, "bottom": 10},
+      {"left": 3, "right": 5, "bottom": null}
+    ],
+    "answer": 16,
+    "hint": "Combine the two top numbers, then scale.",
+    "explanation": "Pattern: bottom = (left + right) × 2. So (3 + 5) × 2 = 16."
+  }
+]

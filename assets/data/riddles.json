@@ -1,0 +1,1462 @@
+[
+  {
+    "id": "easy_01",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 1,
+    "givens": [
+      "A+A+A=30"
+    ],
+    "question": "A=?",
+    "answer": 10,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 30 ÷ 3 = 10."
+  },
+  {
+    "id": "easy_02",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 2,
+    "givens": [
+      "A+A=18"
+    ],
+    "question": "A=?",
+    "answer": 9,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 18 ÷ 2 = 9."
+  },
+  {
+    "id": "easy_03",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 3,
+    "givens": [
+      "A+A+A+A=20"
+    ],
+    "question": "A=?",
+    "answer": 5,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 20 ÷ 4 = 5."
+  },
+  {
+    "id": "easy_04",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 4,
+    "givens": [
+      "A+A+A=27"
+    ],
+    "question": "A=?",
+    "answer": 9,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 27 ÷ 3 = 9."
+  },
+  {
+    "id": "easy_05",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 5,
+    "givens": [
+      "A+A+A+A+A=25"
+    ],
+    "question": "A=?",
+    "answer": 5,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 25 ÷ 5 = 5."
+  },
+  {
+    "id": "easy_06",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 6,
+    "givens": [
+      "A+A=24"
+    ],
+    "question": "A=?",
+    "answer": 12,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 24 ÷ 2 = 12."
+  },
+  {
+    "id": "easy_07",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 7,
+    "givens": [
+      "A+A+A=21"
+    ],
+    "question": "A=?",
+    "answer": 7,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 21 ÷ 3 = 7."
+  },
+  {
+    "id": "easy_08",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 8,
+    "givens": [
+      "A+A=16"
+    ],
+    "question": "A=?",
+    "answer": 8,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 16 ÷ 2 = 8."
+  },
+  {
+    "id": "easy_09",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 9,
+    "givens": [
+      "A+A+A+A=32"
+    ],
+    "question": "A=?",
+    "answer": 8,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 32 ÷ 4 = 8."
+  },
+  {
+    "id": "easy_10",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 10,
+    "givens": [
+      "A+A+A=18"
+    ],
+    "question": "A=?",
+    "answer": 6,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 18 ÷ 3 = 6."
+  },
+  {
+    "id": "easy_11",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 11,
+    "givens": [
+      "A+A+A+A+A=20"
+    ],
+    "question": "A+A=?",
+    "answer": 8,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 20 ÷ 5 = 4. So A+A = 8."
+  },
+  {
+    "id": "easy_12",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 12,
+    "givens": [
+      "A+A=14"
+    ],
+    "question": "A+A+A=?",
+    "answer": 21,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 7. So A+A+A = 21."
+  },
+  {
+    "id": "easy_13",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 13,
+    "givens": [
+      "A+A+A=15"
+    ],
+    "question": "A+A+A+A=?",
+    "answer": 20,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 5. So four circles = 20."
+  },
+  {
+    "id": "easy_14",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 14,
+    "givens": [
+      "A+A=12"
+    ],
+    "question": "A+A+A=?",
+    "answer": 18,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 6. Three of them = 18."
+  },
+  {
+    "id": "easy_15",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 15,
+    "givens": [
+      "A+A+A+A=20"
+    ],
+    "question": "A+A=?",
+    "answer": 10,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 5. Two of them = 10."
+  },
+  {
+    "id": "easy_16",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 16,
+    "givens": [
+      "A+A=22"
+    ],
+    "question": "A=?",
+    "answer": 11,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 22 ÷ 2 = 11."
+  },
+  {
+    "id": "easy_17",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 17,
+    "givens": [
+      "A+A+A=24"
+    ],
+    "question": "A=?",
+    "answer": 8,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 24 ÷ 3 = 8."
+  },
+  {
+    "id": "easy_18",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 18,
+    "givens": [
+      "A+A+A+A=28"
+    ],
+    "question": "A=?",
+    "answer": 7,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 28 ÷ 4 = 7."
+  },
+  {
+    "id": "easy_19",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 19,
+    "givens": [
+      "A+A+A=33"
+    ],
+    "question": "A+A=?",
+    "answer": 22,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 11. Two of them = 22."
+  },
+  {
+    "id": "easy_20",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 20,
+    "givens": [
+      "A+A=10"
+    ],
+    "question": "A+A+A+A+A=?",
+    "answer": 25,
+    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
+    "explanation": "A = 5. Five of them = 25."
+  },
+  {
+    "id": "medium_01",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 1,
+    "givens": [
+      "A+A=12",
+      "A+B=10"
+    ],
+    "question": "B=?",
+    "answer": 4,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 6. So B = 10 − 6 = 4."
+  },
+  {
+    "id": "medium_02",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 2,
+    "givens": [
+      "A+A+A=18",
+      "A+B=10"
+    ],
+    "question": "A+B+B=?",
+    "answer": 14,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 6, B = 4. So 6 + 4 + 4 = 14."
+  },
+  {
+    "id": "medium_03",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 3,
+    "givens": [
+      "A+A=20",
+      "A+B=15"
+    ],
+    "question": "A-B=?",
+    "answer": 5,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 10, B = 5. 10 − 5 = 5."
+  },
+  {
+    "id": "medium_04",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 4,
+    "givens": [
+      "A+A+A=15",
+      "A+B=8"
+    ],
+    "question": "A×B=?",
+    "answer": 15,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 5, B = 3. 5 × 3 = 15."
+  },
+  {
+    "id": "medium_05",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 5,
+    "givens": [
+      "A+B=12",
+      "A-B=2"
+    ],
+    "question": "A+A+B=?",
+    "answer": 19,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 7, B = 5. 7 + 7 + 5 = 19."
+  },
+  {
+    "id": "medium_06",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 6,
+    "givens": [
+      "A+A+A=21",
+      "A+B=10"
+    ],
+    "question": "B+B+B=?",
+    "answer": 9,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 7, B = 3. 3 × 3 = 9."
+  },
+  {
+    "id": "medium_07",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 7,
+    "givens": [
+      "A+A+A+A=24",
+      "A+B=10"
+    ],
+    "question": "A×B=?",
+    "answer": 24,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 6, B = 4. 6 × 4 = 24."
+  },
+  {
+    "id": "medium_08",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 8,
+    "givens": [
+      "A+A=14",
+      "A+B=12"
+    ],
+    "question": "A+B+B=?",
+    "answer": 17,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 7, B = 5. 7 + 5 + 5 = 17."
+  },
+  {
+    "id": "medium_09",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 9,
+    "givens": [
+      "A+A+A=18",
+      "A+B=11"
+    ],
+    "question": "A-B=?",
+    "answer": 1,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 6, B = 5. 6 − 5 = 1."
+  },
+  {
+    "id": "medium_10",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 10,
+    "givens": [
+      "A+B=15",
+      "A-B=5"
+    ],
+    "question": "A+B×2=?",
+    "answer": 20,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 10, B = 5. 10 + 5×2 = 10 + 10 = 20."
+  },
+  {
+    "id": "medium_11",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 11,
+    "givens": [
+      "A+A=16",
+      "A-B=2"
+    ],
+    "question": "B+B+A=?",
+    "answer": 20,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 8, B = 6. 6 + 6 + 8 = 20."
+  },
+  {
+    "id": "medium_12",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 12,
+    "givens": [
+      "A+A=18",
+      "A+B=14"
+    ],
+    "question": "A×B=?",
+    "answer": 45,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 9, B = 5. 9 × 5 = 45."
+  },
+  {
+    "id": "medium_13",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 13,
+    "givens": [
+      "A+A+A=18",
+      "A+A+B=15"
+    ],
+    "question": "A+B×2=?",
+    "answer": 12,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 6, B = 3. 6 + 3×2 = 12."
+  },
+  {
+    "id": "medium_14",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 14,
+    "givens": [
+      "A+B=11",
+      "A+A=12"
+    ],
+    "question": "B×A=?",
+    "answer": 30,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 6, B = 5. 5 × 6 = 30."
+  },
+  {
+    "id": "medium_15",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 15,
+    "givens": [
+      "A+B=13",
+      "A-B=3"
+    ],
+    "question": "A+B+B=?",
+    "answer": 18,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 8, B = 5. 8 + 5 + 5 = 18."
+  },
+  {
+    "id": "medium_16",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 16,
+    "givens": [
+      "A+B=12",
+      "A+A+B=20"
+    ],
+    "question": "A-B=?",
+    "answer": 4,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 8, B = 4. 8 − 4 = 4."
+  },
+  {
+    "id": "medium_17",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 17,
+    "givens": [
+      "A+A+B=20",
+      "A+B=14"
+    ],
+    "question": "B-A=?",
+    "answer": 2,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 6, B = 8. 8 − 6 = 2."
+  },
+  {
+    "id": "medium_18",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 18,
+    "givens": [
+      "A+B=11",
+      "A+A=14"
+    ],
+    "question": "A+B+B=?",
+    "answer": 15,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 7, B = 4. 7 + 4 + 4 = 15."
+  },
+  {
+    "id": "medium_19",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 19,
+    "givens": [
+      "A+B+B=14",
+      "B+B=8"
+    ],
+    "question": "A×B=?",
+    "answer": 24,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "B = 4, A = 6. 6 × 4 = 24."
+  },
+  {
+    "id": "medium_20",
+    "difficulty": "medium",
+    "bucketIndex": 1,
+    "orderInBucket": 20,
+    "givens": [
+      "A+A+B=20",
+      "A+B+B=16"
+    ],
+    "question": "A+B×2=?",
+    "answer": 16,
+    "hint": "Solve the first equation for A, then substitute into the second to find B.",
+    "explanation": "A = 8, B = 4. 8 + 4×2 = 16."
+  },
+  {
+    "id": "hard_01",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 1,
+    "givens": [
+      "A+A+A=30",
+      "A+B+B=18",
+      "B-C=2"
+    ],
+    "question": "C+A×B=?",
+    "answer": 42,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 10, B = 4, C = 2. 2 + 10×4 = 42."
+  },
+  {
+    "id": "hard_02",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 2,
+    "givens": [
+      "A+A=14",
+      "A+B=10",
+      "B+C=8"
+    ],
+    "question": "A+B×C=?",
+    "answer": 22,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 7, B = 3, C = 5. 7 + 3×5 = 22."
+  },
+  {
+    "id": "hard_03",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 3,
+    "givens": [
+      "A+A+A=24",
+      "A+B=11",
+      "B+C=10"
+    ],
+    "question": "A×B+C=?",
+    "answer": 31,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 8, B = 3, C = 7. 8×3 + 7 = 31."
+  },
+  {
+    "id": "hard_04",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 4,
+    "givens": [
+      "A+A+A+A=20",
+      "A+B=12",
+      "B+C=10"
+    ],
+    "question": "A+B×C=?",
+    "answer": 26,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 5, B = 7, C = 3. 5 + 7×3 = 26."
+  },
+  {
+    "id": "hard_05",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 5,
+    "givens": [
+      "A+A=18",
+      "A+B=12",
+      "B+C=10"
+    ],
+    "question": "C×B+A=?",
+    "answer": 30,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 9, B = 3, C = 7. 7×3 + 9 = 30."
+  },
+  {
+    "id": "hard_06",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 6,
+    "givens": [
+      "A+A+A=15",
+      "A+B=11",
+      "B+C=10"
+    ],
+    "question": "A×C+B=?",
+    "answer": 26,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 5, B = 6, C = 4. 5×4 + 6 = 26."
+  },
+  {
+    "id": "hard_07",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 7,
+    "givens": [
+      "A+A+A=21",
+      "A+B=10",
+      "B+C=8"
+    ],
+    "question": "C×B+A=?",
+    "answer": 22,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 7, B = 3, C = 5. 5×3 + 7 = 22."
+  },
+  {
+    "id": "hard_08",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 8,
+    "givens": [
+      "A+A=16",
+      "A+B=11",
+      "B+C=10"
+    ],
+    "question": "A+B×C=?",
+    "answer": 29,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 8, B = 3, C = 7. 8 + 3×7 = 29."
+  },
+  {
+    "id": "hard_09",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 9,
+    "givens": [
+      "A+A+A+A=20",
+      "A+B=12",
+      "B-C=4"
+    ],
+    "question": "A×C+B=?",
+    "answer": 22,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 5, B = 7, C = 3. 5×3 + 7 = 22."
+  },
+  {
+    "id": "hard_10",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 10,
+    "givens": [
+      "A+A=14",
+      "A+B=10",
+      "B+C=8"
+    ],
+    "question": "A+B×C=?",
+    "answer": 22,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 7, B = 3, C = 5. 7 + 3×5 = 22."
+  },
+  {
+    "id": "hard_11",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 11,
+    "givens": [
+      "A+A=12",
+      "A+B+B=14",
+      "B+C+C=14"
+    ],
+    "question": "A×B-C=?",
+    "answer": 19,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 6, B = 4, C = 5. 6×4 − 5 = 19."
+  },
+  {
+    "id": "hard_12",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 12,
+    "givens": [
+      "A+A+A=18",
+      "A+B=10",
+      "B×C=12"
+    ],
+    "question": "A+B×C=?",
+    "answer": 18,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 6, B = 4, C = 3. 6 + 4×3 = 18."
+  },
+  {
+    "id": "hard_13",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 13,
+    "givens": [
+      "A+A+B=16",
+      "A+B=11",
+      "B+C+C=14"
+    ],
+    "question": "A×C-B=?",
+    "answer": 14,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 5, B = 6, C = 4. 5×4 − 6 = 14."
+  },
+  {
+    "id": "hard_14",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 14,
+    "givens": [
+      "A+B=11",
+      "A-B=3",
+      "B+C=10"
+    ],
+    "question": "A+B×C=?",
+    "answer": 31,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 7, B = 4, C = 6. 7 + 4×6 = 31."
+  },
+  {
+    "id": "hard_15",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 15,
+    "givens": [
+      "A+A+A=15",
+      "A+B=8",
+      "B×C=12"
+    ],
+    "question": "A-B+C=?",
+    "answer": 6,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 5, B = 3, C = 4. 5 − 3 + 4 = 6."
+  },
+  {
+    "id": "hard_16",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 16,
+    "givens": [
+      "A+A=14",
+      "A-B=3",
+      "B+C=9"
+    ],
+    "question": "A+B×C=?",
+    "answer": 27,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 7, B = 4, C = 5. 7 + 4×5 = 27."
+  },
+  {
+    "id": "hard_17",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 17,
+    "givens": [
+      "A+A+A+A=20",
+      "A+B=12",
+      "B-C=4"
+    ],
+    "question": "A×C+B=?",
+    "answer": 22,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 5, B = 7, C = 3. 5×3 + 7 = 22."
+  },
+  {
+    "id": "hard_18",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 18,
+    "givens": [
+      "A+B=11",
+      "A-B=3",
+      "B+C=10"
+    ],
+    "question": "A×B-C=?",
+    "answer": 22,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 7, B = 4, C = 6. 7×4 − 6 = 22."
+  },
+  {
+    "id": "hard_19",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 19,
+    "givens": [
+      "A+B+B=14",
+      "A+B=9",
+      "B+C+C=11"
+    ],
+    "question": "A×C+B=?",
+    "answer": 17,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 4, B = 5, C = 3. 4×3 + 5 = 17."
+  },
+  {
+    "id": "hard_20",
+    "difficulty": "hard",
+    "bucketIndex": 2,
+    "orderInBucket": 20,
+    "givens": [
+      "A+B=11",
+      "A+B+B=15",
+      "B×C=12"
+    ],
+    "question": "A+B×C=?",
+    "answer": 19,
+    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
+    "explanation": "A = 7, B = 4, C = 3. 7 + 4×3 = 19."
+  },
+  {
+    "id": "expert_01",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 1,
+    "givens": [
+      "A×A=16",
+      "A+B=10",
+      "B+C+C=14"
+    ],
+    "question": "A×B+C=?",
+    "answer": 28,
+    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
+    "explanation": "A = 4, B = 6, C = 4. 4×6 + 4 = 28."
+  },
+  {
+    "id": "expert_02",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 2,
+    "givens": [
+      "A+A+A=21",
+      "A×B=14",
+      "B+C=9"
+    ],
+    "question": "A+B×C=?",
+    "answer": 21,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 7, B = 2, C = 7. 7 + 2×7 = 21."
+  },
+  {
+    "id": "expert_03",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 3,
+    "givens": [
+      "A×2=14",
+      "A+B=12",
+      "B+C=9"
+    ],
+    "question": "A+B×C=?",
+    "answer": 27,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 7, B = 5, C = 4. 7 + 5×4 = 27."
+  },
+  {
+    "id": "expert_04",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 4,
+    "givens": [
+      "A+A=18",
+      "A-B=3",
+      "B×C=12"
+    ],
+    "question": "A+B×C=?",
+    "answer": 21,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 9, B = 6, C = 2. 9 + 6×2 = 21."
+  },
+  {
+    "id": "expert_05",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 5,
+    "givens": [
+      "A×A=25",
+      "A+B=11",
+      "B+C+C=14"
+    ],
+    "question": "A×C-B=?",
+    "answer": 14,
+    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
+    "explanation": "A = 5, B = 6, C = 4. 5×4 − 6 = 14."
+  },
+  {
+    "id": "expert_06",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 6,
+    "givens": [
+      "A+A+A+A=24",
+      "A×B=18",
+      "B+C=8"
+    ],
+    "question": "A+B×C=?",
+    "answer": 21,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 6, B = 3, C = 5. 6 + 3×5 = 21."
+  },
+  {
+    "id": "expert_07",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 7,
+    "givens": [
+      "A×A=36",
+      "A+B=10",
+      "B×C=12"
+    ],
+    "question": "A+B×C=?",
+    "answer": 18,
+    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
+    "explanation": "A = 6, B = 4, C = 3. 6 + 4×3 = 18."
+  },
+  {
+    "id": "expert_08",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 8,
+    "givens": [
+      "A+A+A=24",
+      "A-B=5",
+      "B+C+C=11"
+    ],
+    "question": "A+B×C=?",
+    "answer": 20,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 8, B = 3, C = 4. 8 + 3×4 = 20."
+  },
+  {
+    "id": "expert_09",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 9,
+    "givens": [
+      "A+B=12",
+      "A-B=4",
+      "B×C=12"
+    ],
+    "question": "A+B×C=?",
+    "answer": 20,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 8, B = 4, C = 3. 8 + 4×3 = 20."
+  },
+  {
+    "id": "expert_10",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 10,
+    "givens": [
+      "A×A=49",
+      "A+B=11",
+      "B+C=9"
+    ],
+    "question": "A-B+C×C=?",
+    "answer": 28,
+    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
+    "explanation": "A = 7, B = 4, C = 5. 7 − 4 + 5×5 = 28."
+  },
+  {
+    "id": "expert_11",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 11,
+    "givens": [
+      "A+A+A+A=20",
+      "A×B=15",
+      "B+C=10"
+    ],
+    "question": "A×C-B×B=?",
+    "answer": 26,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 5, B = 3, C = 7. 5×7 − 3×3 = 35 − 9 = 26."
+  },
+  {
+    "id": "expert_12",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 12,
+    "givens": [
+      "A+A+B=14",
+      "A+B=10",
+      "B×C=24"
+    ],
+    "question": "A+B×C=?",
+    "answer": 28,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 4, B = 6, C = 4. 4 + 6×4 = 28."
+  },
+  {
+    "id": "expert_13",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 13,
+    "givens": [
+      "A×3=15",
+      "A+B=12",
+      "B-C=3"
+    ],
+    "question": "A+B×C=?",
+    "answer": 33,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 5, B = 7, C = 4. 5 + 7×4 = 33."
+  },
+  {
+    "id": "expert_14",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 14,
+    "givens": [
+      "A+A+A=18",
+      "A×B=24",
+      "B+C+C=14"
+    ],
+    "question": "A×B-C=?",
+    "answer": 19,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 6, B = 4, C = 5. 6×4 − 5 = 19."
+  },
+  {
+    "id": "expert_15",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 15,
+    "givens": [
+      "A+A+A+A+A=15",
+      "A+B=10",
+      "B×C=14"
+    ],
+    "question": "A×B+C=?",
+    "answer": 23,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 3, B = 7, C = 2. 3×7 + 2 = 23."
+  },
+  {
+    "id": "expert_16",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 16,
+    "givens": [
+      "A×A=64",
+      "A-B=3",
+      "B+C+C=11"
+    ],
+    "question": "A+B×C=?",
+    "answer": 23,
+    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
+    "explanation": "A = 8, B = 5, C = 3. 8 + 5×3 = 23."
+  },
+  {
+    "id": "expert_17",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 17,
+    "givens": [
+      "A+A+A=27",
+      "A-B=4",
+      "B+C+C=11"
+    ],
+    "question": "A+B×C=?",
+    "answer": 24,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 9, B = 5, C = 3. 9 + 5×3 = 24."
+  },
+  {
+    "id": "expert_18",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 18,
+    "givens": [
+      "A+B+C=15",
+      "A+B=10",
+      "A-B=2"
+    ],
+    "question": "A×B-C=?",
+    "answer": 19,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 6, B = 4, C = 5. 6×4 − 5 = 19."
+  },
+  {
+    "id": "expert_19",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 19,
+    "givens": [
+      "A×A=81",
+      "A-B=4",
+      "B+C=8"
+    ],
+    "question": "A+B×C=?",
+    "answer": 24,
+    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
+    "explanation": "A = 9, B = 5, C = 3. 9 + 5×3 = 24."
+  },
+  {
+    "id": "expert_20",
+    "difficulty": "expert",
+    "bucketIndex": 3,
+    "orderInBucket": 20,
+    "givens": [
+      "A+A+B=20",
+      "A+B=13",
+      "B×C=24"
+    ],
+    "question": "A+B×C=?",
+    "answer": 31,
+    "hint": "Chain through the equations: A, then B, then C.",
+    "explanation": "A = 7, B = 6, C = 4. 7 + 6×4 = 31."
+  },
+  {
+    "id": "master_01",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 1,
+    "givens": [
+      "A+A+A=21",
+      "B+B=10",
+      "C+D=11",
+      "D-C=3"
+    ],
+    "question": "A×C-B+D=?",
+    "answer": 30,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 7, B = 5, C = 4, D = 7. 7×4 − 5 + 7 = 30."
+  },
+  {
+    "id": "master_02",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 2,
+    "givens": [
+      "A×A=49",
+      "A+B=10",
+      "B×C=12",
+      "C-D=2"
+    ],
+    "question": "A+B×C-D=?",
+    "answer": 17,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
+    "explanation": "A = 7, B = 3, C = 4, D = 2. 7 + 3×4 − 2 = 17."
+  },
+  {
+    "id": "master_03",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 3,
+    "givens": [
+      "A+B=9",
+      "A-B=3",
+      "C+D=11",
+      "C-D=1"
+    ],
+    "question": "A+B×C-D=?",
+    "answer": 19,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 6, B = 3, C = 6, D = 5. 6 + 3×6 − 5 = 19."
+  },
+  {
+    "id": "master_04",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 4,
+    "givens": [
+      "A+A+A+A=24",
+      "A×B=18",
+      "B+C=10",
+      "C-D=2"
+    ],
+    "question": "A×B+C×D=?",
+    "answer": 53,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 6, B = 3, C = 7, D = 5. 6×3 + 7×5 = 18 + 35 = 53."
+  },
+  {
+    "id": "master_05",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 5,
+    "givens": [
+      "A+A=18",
+      "A-B=3",
+      "B×C=18",
+      "C+D=10"
+    ],
+    "question": "A+B×C-D=?",
+    "answer": 20,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 9, B = 6, C = 3, D = 7. 9 + 6×3 − 7 = 20."
+  },
+  {
+    "id": "master_06",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 6,
+    "givens": [
+      "A×A=36",
+      "A+B=11",
+      "B×C=15",
+      "C+D=10"
+    ],
+    "question": "A+B×C+D=?",
+    "answer": 28,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
+    "explanation": "A = 6, B = 5, C = 3, D = 7. 6 + 5×3 + 7 = 28."
+  },
+  {
+    "id": "master_07",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 7,
+    "givens": [
+      "A+B+C=15",
+      "A-B=4",
+      "B+C=7"
+    ],
+    "question": "A×C-B=?",
+    "answer": 20,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 8, B = 4, C = 3. 8×3 − 4 = 20."
+  },
+  {
+    "id": "master_08",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 8,
+    "givens": [
+      "A×3=18",
+      "A+B=11",
+      "B×C=15",
+      "C+D=10"
+    ],
+    "question": "A×B-C×D=?",
+    "answer": 9,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 6, B = 5, C = 3, D = 7. 6×5 − 3×7 = 30 − 21 = 9."
+  },
+  {
+    "id": "master_09",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 9,
+    "givens": [
+      "A+A+A=24",
+      "A-B=3",
+      "B×C=15",
+      "C+D=10"
+    ],
+    "question": "A+B×C+D=?",
+    "answer": 30,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 8, B = 5, C = 3, D = 7. 8 + 5×3 + 7 = 30."
+  },
+  {
+    "id": "master_10",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 10,
+    "givens": [
+      "A×A=64",
+      "A-B=3",
+      "B+C=11",
+      "C×D=18"
+    ],
+    "question": "A+B×C-D=?",
+    "answer": 35,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
+    "explanation": "A = 8, B = 5, C = 6, D = 3. 8 + 5×6 − 3 = 35."
+  },
+  {
+    "id": "master_11",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 11,
+    "givens": [
+      "A×A=49",
+      "A-B=2",
+      "B×C=15",
+      "C+D=10"
+    ],
+    "question": "A+B×C+D=?",
+    "answer": 29,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
+    "explanation": "A = 7, B = 5, C = 3, D = 7. 7 + 5×3 + 7 = 29."
+  },
+  {
+    "id": "master_12",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 12,
+    "givens": [
+      "A+A+A+A=20",
+      "A×B=20",
+      "B+C=10",
+      "C-D=2"
+    ],
+    "question": "A+B×C-D=?",
+    "answer": 25,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 5, B = 4, C = 6, D = 4. 5 + 4×6 − 4 = 25."
+  },
+  {
+    "id": "master_13",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 13,
+    "givens": [
+      "A+A+A=30",
+      "A+B=14",
+      "B×C=12",
+      "C+D=10"
+    ],
+    "question": "A×B-C×D=?",
+    "answer": 19,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 10, B = 4, C = 3, D = 7. 10×4 − 3×7 = 40 − 21 = 19."
+  },
+  {
+    "id": "master_14",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 14,
+    "givens": [
+      "A×A=36",
+      "A+B=10",
+      "B×C=12",
+      "C+D=10"
+    ],
+    "question": "A+B×C+D=?",
+    "answer": 25,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
+    "explanation": "A = 6, B = 4, C = 3, D = 7. 6 + 4×3 + 7 = 25."
+  },
+  {
+    "id": "master_15",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 15,
+    "givens": [
+      "A+B=10",
+      "A-B=4",
+      "B×C=12",
+      "C+D=11"
+    ],
+    "question": "A×B+C×D=?",
+    "answer": 49,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 7, B = 3, C = 4, D = 7. 7×3 + 4×7 = 21 + 28 = 49."
+  },
+  {
+    "id": "master_16",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 16,
+    "givens": [
+      "A+B=10",
+      "A-B=4",
+      "C+A=12",
+      "C×D=15"
+    ],
+    "question": "A+B×C-D=?",
+    "answer": 19,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 7, B = 3, C = 5, D = 3. 7 + 3×5 − 3 = 19."
+  },
+  {
+    "id": "master_17",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 17,
+    "givens": [
+      "A×A=25",
+      "A+B=11",
+      "B-C=2",
+      "C×D=12"
+    ],
+    "question": "A×B-C×D=?",
+    "answer": 18,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
+    "explanation": "A = 5, B = 6, C = 4, D = 3. 5×6 − 4×3 = 30 − 12 = 18."
+  },
+  {
+    "id": "master_18",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 18,
+    "givens": [
+      "A+A+A+A=24",
+      "A×B=12",
+      "B+C=10",
+      "C-D=3"
+    ],
+    "question": "A×D+B×C=?",
+    "answer": 46,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 6, B = 2, C = 8, D = 5. 6×5 + 2×8 = 30 + 16 = 46."
+  },
+  {
+    "id": "master_19",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 19,
+    "givens": [
+      "A+B+C+D=20",
+      "A+B=11",
+      "A-B=3",
+      "C-D=1"
+    ],
+    "question": "A+B×C-D=?",
+    "answer": 23,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
+    "explanation": "A = 7, B = 4, C = 5, D = 4. 7 + 4×5 − 4 = 23."
+  },
+  {
+    "id": "master_20",
+    "difficulty": "master",
+    "bucketIndex": 4,
+    "orderInBucket": 20,
+    "givens": [
+      "A×A=100",
+      "A-B=3",
+      "B+C=10",
+      "C×D=12",
+      "D+E=10"
+    ],
+    "question": "A+B×C-D×E=?",
+    "answer": 7,
+    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
+    "explanation": "A = 10, B = 7, C = 3, D = 4, E = 6. 10 + 7×3 − 4×6 = 10 + 21 − 24 = 7."
+  }
+]
