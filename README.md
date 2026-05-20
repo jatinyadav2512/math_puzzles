@@ -1,16 +1,44 @@
-# math_riddles
+# Math Riddles - Brain Puzzles
 
-A new Flutter project.
+A native Android app built with Flutter that delivers visual symbol-equation math riddles. Progress through 100 hand-authored riddles systematically, training your brain one riddle at a time.
 
-## Getting Started
+## 📱 Features
+- **100 Curated Riddles:** Progress through 5 difficulty levels (Easy to Master).
+- **Offline-First:** All riddles ship with the app; no network connection required.
+- **Clean UI:** Built with Material 3, featuring smooth animations and a minimalist design.
+- **Hint System:** Stuck? Use the built-in hint system to get a nudge in the right direction.
+- **Stats Tracking:** Track your progress, current streaks, and total time spent solving puzzles.
 
-This project is a starting point for a Flutter application.
+## 🛠 Tech Stack
+- **Framework:** Flutter (Dart)
+- **State Management:** Provider
+- **Routing:** go_router
+- **Persistence:** Shared Preferences
+- **Code Generation:** Freezed + Json Serializable
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Getting Started
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+To run this project locally, ensure you have Flutter installed.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jatinyadav2512/math_puzzles.git
+   ```
+2. Navigate to the directory:
+   ```bash
+   cd math_riddles
+   ```
+3. Get the dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Run the app:
+   ```bash
+   flutter run
+   ```
+
+## 📖 Documentation
+Detailed project architecture, engineering practices, and specifications can be found in the `docs/` directory:
+- `docs/projectOverview.md` - Core features, game loop, and scope.
+- `docs/architecture.md` - Technical architecture and file specifications.
+- `docs/design.md` - Visual design and theming specifics.
