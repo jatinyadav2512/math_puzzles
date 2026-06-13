@@ -23,6 +23,8 @@ mixin _$AppSettings {
   ThemeMode get themeMode => throw _privateConstructorUsedError;
   bool get soundEnabled => throw _privateConstructorUsedError;
   bool get hapticsEnabled => throw _privateConstructorUsedError;
+  bool get isPremium => throw _privateConstructorUsedError;
+  int? get premiumExpiryDateMs => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -36,7 +38,12 @@ abstract class $AppSettingsCopyWith<$Res> {
           AppSettings value, $Res Function(AppSettings) then) =
       _$AppSettingsCopyWithImpl<$Res, AppSettings>;
   @useResult
-  $Res call({ThemeMode themeMode, bool soundEnabled, bool hapticsEnabled});
+  $Res call(
+      {ThemeMode themeMode,
+      bool soundEnabled,
+      bool hapticsEnabled,
+      bool isPremium,
+      int? premiumExpiryDateMs});
 }
 
 /// @nodoc
@@ -55,6 +62,8 @@ class _$AppSettingsCopyWithImpl<$Res, $Val extends AppSettings>
     Object? themeMode = null,
     Object? soundEnabled = null,
     Object? hapticsEnabled = null,
+    Object? isPremium = null,
+    Object? premiumExpiryDateMs = freezed,
   }) {
     return _then(_value.copyWith(
       themeMode: null == themeMode
@@ -69,6 +78,14 @@ class _$AppSettingsCopyWithImpl<$Res, $Val extends AppSettings>
           ? _value.hapticsEnabled
           : hapticsEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
+      isPremium: null == isPremium
+          ? _value.isPremium
+          : isPremium // ignore: cast_nullable_to_non_nullable
+              as bool,
+      premiumExpiryDateMs: freezed == premiumExpiryDateMs
+          ? _value.premiumExpiryDateMs
+          : premiumExpiryDateMs // ignore: cast_nullable_to_non_nullable
+              as int?,
     ) as $Val);
   }
 }
@@ -81,7 +98,12 @@ abstract class _$$AppSettingsImplCopyWith<$Res>
       __$$AppSettingsImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({ThemeMode themeMode, bool soundEnabled, bool hapticsEnabled});
+  $Res call(
+      {ThemeMode themeMode,
+      bool soundEnabled,
+      bool hapticsEnabled,
+      bool isPremium,
+      int? premiumExpiryDateMs});
 }
 
 /// @nodoc
@@ -98,6 +120,8 @@ class __$$AppSettingsImplCopyWithImpl<$Res>
     Object? themeMode = null,
     Object? soundEnabled = null,
     Object? hapticsEnabled = null,
+    Object? isPremium = null,
+    Object? premiumExpiryDateMs = freezed,
   }) {
     return _then(_$AppSettingsImpl(
       themeMode: null == themeMode
@@ -112,6 +136,14 @@ class __$$AppSettingsImplCopyWithImpl<$Res>
           ? _value.hapticsEnabled
           : hapticsEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
+      isPremium: null == isPremium
+          ? _value.isPremium
+          : isPremium // ignore: cast_nullable_to_non_nullable
+              as bool,
+      premiumExpiryDateMs: freezed == premiumExpiryDateMs
+          ? _value.premiumExpiryDateMs
+          : premiumExpiryDateMs // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -122,7 +154,9 @@ class _$AppSettingsImpl implements _AppSettings {
   const _$AppSettingsImpl(
       {this.themeMode = ThemeMode.dark,
       this.soundEnabled = true,
-      this.hapticsEnabled = true});
+      this.hapticsEnabled = true,
+      this.isPremium = false,
+      this.premiumExpiryDateMs});
 
   factory _$AppSettingsImpl.fromJson(Map<String, dynamic> json) =>
       _$$AppSettingsImplFromJson(json);
@@ -136,10 +170,15 @@ class _$AppSettingsImpl implements _AppSettings {
   @override
   @JsonKey()
   final bool hapticsEnabled;
+  @override
+  @JsonKey()
+  final bool isPremium;
+  @override
+  final int? premiumExpiryDateMs;
 
   @override
   String toString() {
-    return 'AppSettings(themeMode: $themeMode, soundEnabled: $soundEnabled, hapticsEnabled: $hapticsEnabled)';
+    return 'AppSettings(themeMode: $themeMode, soundEnabled: $soundEnabled, hapticsEnabled: $hapticsEnabled, isPremium: $isPremium, premiumExpiryDateMs: $premiumExpiryDateMs)';
   }
 
   @override
@@ -152,13 +191,17 @@ class _$AppSettingsImpl implements _AppSettings {
             (identical(other.soundEnabled, soundEnabled) ||
                 other.soundEnabled == soundEnabled) &&
             (identical(other.hapticsEnabled, hapticsEnabled) ||
-                other.hapticsEnabled == hapticsEnabled));
+                other.hapticsEnabled == hapticsEnabled) &&
+            (identical(other.isPremium, isPremium) ||
+                other.isPremium == isPremium) &&
+            (identical(other.premiumExpiryDateMs, premiumExpiryDateMs) ||
+                other.premiumExpiryDateMs == premiumExpiryDateMs));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, themeMode, soundEnabled, hapticsEnabled);
+  int get hashCode => Object.hash(runtimeType, themeMode, soundEnabled,
+      hapticsEnabled, isPremium, premiumExpiryDateMs);
 
   @JsonKey(ignore: true)
   @override
@@ -178,7 +221,9 @@ abstract class _AppSettings implements AppSettings {
   const factory _AppSettings(
       {final ThemeMode themeMode,
       final bool soundEnabled,
-      final bool hapticsEnabled}) = _$AppSettingsImpl;
+      final bool hapticsEnabled,
+      final bool isPremium,
+      final int? premiumExpiryDateMs}) = _$AppSettingsImpl;
 
   factory _AppSettings.fromJson(Map<String, dynamic> json) =
       _$AppSettingsImpl.fromJson;
@@ -189,6 +234,10 @@ abstract class _AppSettings implements AppSettings {
   bool get soundEnabled;
   @override
   bool get hapticsEnabled;
+  @override
+  bool get isPremium;
+  @override
+  int? get premiumExpiryDateMs;
   @override
   @JsonKey(ignore: true)
   _$$AppSettingsImplCopyWith<_$AppSettingsImpl> get copyWith =>

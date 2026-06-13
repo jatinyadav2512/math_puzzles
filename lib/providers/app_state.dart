@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:math_riddles/core/constants/app_constants.dart';
 import 'package:math_riddles/data/models/app_settings.dart';
 import 'package:math_riddles/data/models/progress.dart';
 import 'package:math_riddles/data/models/riddle.dart';
@@ -93,7 +94,7 @@ class AppState extends ChangeNotifier {
     final riddlesPerBucket = <int, int>{};
     var hintsUsed = 0;
 
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < AppConstants.bucketCount; i++) {
       final bucket = all.where((r) => r.bucketIndex == i);
       riddlesPerBucket[i] = bucket.length;
       solvedPerBucket[i] =
@@ -131,6 +132,15 @@ class AppState extends ChangeNotifier {
       _riddles = await _riddleRepo.loadAll();
       _progress = await _progressRepo.load();
       _settings = await _settingsRepo.load();
+
+      // Check if premium has expired
+      if (_settings.isPremium && _settings.premiumExpiryDateMs != null) {
+        if (DateTime.now().millisecondsSinceEpoch > _settings.premiumExpiryDateMs!) {
+          _settings = _settings.copyWith(isPremium: false, premiumExpiryDateMs: null);
+          await _settingsRepo.save(_settings);
+        }
+      }
+
       _initialized = true;
       _initError = null;
     } on Exception catch (e) {
@@ -174,4 +184,9 @@ class AppState extends ChangeNotifier {
     await _settingsRepo.save(newSettings);
   }
 
+  /// Unlocks premium status for 90 days.
+  void unlockPremium() {
+    final expiry = DateTime.now().add(const Duration(days: 90)).millisecondsSinceEpoch;
+    updateSettings(_settings.copyWith(isPremium: true, premiumExpiryDateMs: expiry));
+  }
 }

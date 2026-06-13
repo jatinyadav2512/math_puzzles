@@ -29,7 +29,7 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
               themeModeIndex >= 0 &&
               themeModeIndex < ThemeMode.values.length
           ? ThemeMode.values[themeModeIndex]
-          : ThemeMode.system;
+          : ThemeMode.dark;
 
       return AppSettings(
         themeMode: themeMode,

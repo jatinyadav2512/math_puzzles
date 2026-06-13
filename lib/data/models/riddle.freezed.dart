@@ -18,6 +18,10 @@ Riddle _$RiddleFromJson(Map<String, dynamic> json) {
   switch (json['displayType']) {
     case 'trianglePattern':
       return TrianglePatternRiddle.fromJson(json);
+    case 'sequence':
+      return SequenceRiddle.fromJson(json);
+    case 'figure':
+      return FigureRiddle.fromJson(json);
 
     default:
       return EquationRiddle.fromJson(json);
@@ -56,6 +60,30 @@ mixin _$Riddle {
             String hint,
             String explanation)
         trianglePattern,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        sequence,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        figure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -81,6 +109,30 @@ mixin _$Riddle {
             String hint,
             String explanation)?
         trianglePattern,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -106,6 +158,30 @@ mixin _$Riddle {
             String hint,
             String explanation)?
         trianglePattern,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -113,18 +189,24 @@ mixin _$Riddle {
   TResult map<TResult extends Object?>({
     required TResult Function(EquationRiddle value) equation,
     required TResult Function(TrianglePatternRiddle value) trianglePattern,
+    required TResult Function(SequenceRiddle value) sequence,
+    required TResult Function(FigureRiddle value) figure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(EquationRiddle value)? equation,
     TResult? Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult? Function(SequenceRiddle value)? sequence,
+    TResult? Function(FigureRiddle value)? figure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(EquationRiddle value)? equation,
     TResult Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult Function(SequenceRiddle value)? sequence,
+    TResult Function(FigureRiddle value)? figure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -403,6 +485,30 @@ class _$EquationRiddleImpl implements EquationRiddle {
             String hint,
             String explanation)
         trianglePattern,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        sequence,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        figure,
   }) {
     return equation(id, difficulty, bucketIndex, orderInBucket, givens,
         question, answer, hint, explanation);
@@ -432,6 +538,30 @@ class _$EquationRiddleImpl implements EquationRiddle {
             String hint,
             String explanation)?
         trianglePattern,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
   }) {
     return equation?.call(id, difficulty, bucketIndex, orderInBucket, givens,
         question, answer, hint, explanation);
@@ -461,6 +591,30 @@ class _$EquationRiddleImpl implements EquationRiddle {
             String hint,
             String explanation)?
         trianglePattern,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
     required TResult orElse(),
   }) {
     if (equation != null) {
@@ -475,6 +629,8 @@ class _$EquationRiddleImpl implements EquationRiddle {
   TResult map<TResult extends Object?>({
     required TResult Function(EquationRiddle value) equation,
     required TResult Function(TrianglePatternRiddle value) trianglePattern,
+    required TResult Function(SequenceRiddle value) sequence,
+    required TResult Function(FigureRiddle value) figure,
   }) {
     return equation(this);
   }
@@ -484,6 +640,8 @@ class _$EquationRiddleImpl implements EquationRiddle {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(EquationRiddle value)? equation,
     TResult? Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult? Function(SequenceRiddle value)? sequence,
+    TResult? Function(FigureRiddle value)? figure,
   }) {
     return equation?.call(this);
   }
@@ -493,6 +651,8 @@ class _$EquationRiddleImpl implements EquationRiddle {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(EquationRiddle value)? equation,
     TResult Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult Function(SequenceRiddle value)? sequence,
+    TResult Function(FigureRiddle value)? figure,
     required TResult orElse(),
   }) {
     if (equation != null) {
@@ -737,6 +897,30 @@ class _$TrianglePatternRiddleImpl implements TrianglePatternRiddle {
             String hint,
             String explanation)
         trianglePattern,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        sequence,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        figure,
   }) {
     return trianglePattern(id, difficulty, bucketIndex, orderInBucket,
         triangles, answer, hint, explanation);
@@ -766,6 +950,30 @@ class _$TrianglePatternRiddleImpl implements TrianglePatternRiddle {
             String hint,
             String explanation)?
         trianglePattern,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
   }) {
     return trianglePattern?.call(id, difficulty, bucketIndex, orderInBucket,
         triangles, answer, hint, explanation);
@@ -795,6 +1003,30 @@ class _$TrianglePatternRiddleImpl implements TrianglePatternRiddle {
             String hint,
             String explanation)?
         trianglePattern,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
     required TResult orElse(),
   }) {
     if (trianglePattern != null) {
@@ -809,6 +1041,8 @@ class _$TrianglePatternRiddleImpl implements TrianglePatternRiddle {
   TResult map<TResult extends Object?>({
     required TResult Function(EquationRiddle value) equation,
     required TResult Function(TrianglePatternRiddle value) trianglePattern,
+    required TResult Function(SequenceRiddle value) sequence,
+    required TResult Function(FigureRiddle value) figure,
   }) {
     return trianglePattern(this);
   }
@@ -818,6 +1052,8 @@ class _$TrianglePatternRiddleImpl implements TrianglePatternRiddle {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(EquationRiddle value)? equation,
     TResult? Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult? Function(SequenceRiddle value)? sequence,
+    TResult? Function(FigureRiddle value)? figure,
   }) {
     return trianglePattern?.call(this);
   }
@@ -827,6 +1063,8 @@ class _$TrianglePatternRiddleImpl implements TrianglePatternRiddle {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(EquationRiddle value)? equation,
     TResult Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult Function(SequenceRiddle value)? sequence,
+    TResult Function(FigureRiddle value)? figure,
     required TResult orElse(),
   }) {
     if (trianglePattern != null) {
@@ -876,6 +1114,903 @@ abstract class TrianglePatternRiddle implements Riddle {
   @JsonKey(ignore: true)
   _$$TrianglePatternRiddleImplCopyWith<_$TrianglePatternRiddleImpl>
       get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$SequenceRiddleImplCopyWith<$Res>
+    implements $RiddleCopyWith<$Res> {
+  factory _$$SequenceRiddleImplCopyWith(_$SequenceRiddleImpl value,
+          $Res Function(_$SequenceRiddleImpl) then) =
+      __$$SequenceRiddleImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      Difficulty difficulty,
+      int bucketIndex,
+      int orderInBucket,
+      String sequenceType,
+      List<String> lines,
+      String prompt,
+      int answer,
+      String hint,
+      String explanation});
+}
+
+/// @nodoc
+class __$$SequenceRiddleImplCopyWithImpl<$Res>
+    extends _$RiddleCopyWithImpl<$Res, _$SequenceRiddleImpl>
+    implements _$$SequenceRiddleImplCopyWith<$Res> {
+  __$$SequenceRiddleImplCopyWithImpl(
+      _$SequenceRiddleImpl _value, $Res Function(_$SequenceRiddleImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? difficulty = null,
+    Object? bucketIndex = null,
+    Object? orderInBucket = null,
+    Object? sequenceType = null,
+    Object? lines = null,
+    Object? prompt = null,
+    Object? answer = null,
+    Object? hint = null,
+    Object? explanation = null,
+  }) {
+    return _then(_$SequenceRiddleImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      difficulty: null == difficulty
+          ? _value.difficulty
+          : difficulty // ignore: cast_nullable_to_non_nullable
+              as Difficulty,
+      bucketIndex: null == bucketIndex
+          ? _value.bucketIndex
+          : bucketIndex // ignore: cast_nullable_to_non_nullable
+              as int,
+      orderInBucket: null == orderInBucket
+          ? _value.orderInBucket
+          : orderInBucket // ignore: cast_nullable_to_non_nullable
+              as int,
+      sequenceType: null == sequenceType
+          ? _value.sequenceType
+          : sequenceType // ignore: cast_nullable_to_non_nullable
+              as String,
+      lines: null == lines
+          ? _value._lines
+          : lines // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      prompt: null == prompt
+          ? _value.prompt
+          : prompt // ignore: cast_nullable_to_non_nullable
+              as String,
+      answer: null == answer
+          ? _value.answer
+          : answer // ignore: cast_nullable_to_non_nullable
+              as int,
+      hint: null == hint
+          ? _value.hint
+          : hint // ignore: cast_nullable_to_non_nullable
+              as String,
+      explanation: null == explanation
+          ? _value.explanation
+          : explanation // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$SequenceRiddleImpl implements SequenceRiddle {
+  const _$SequenceRiddleImpl(
+      {required this.id,
+      required this.difficulty,
+      required this.bucketIndex,
+      required this.orderInBucket,
+      required this.sequenceType,
+      required final List<String> lines,
+      required this.prompt,
+      required this.answer,
+      required this.hint,
+      required this.explanation,
+      final String? $type})
+      : _lines = lines,
+        $type = $type ?? 'sequence';
+
+  factory _$SequenceRiddleImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SequenceRiddleImplFromJson(json);
+
+  @override
+  final String id;
+  @override
+  final Difficulty difficulty;
+  @override
+  final int bucketIndex;
+  @override
+  final int orderInBucket;
+
+  /// series | analogy | coding | oddOneOut | operation | missingNumber
+  @override
+  final String sequenceType;
+
+  /// Display rows; for most types exactly one contains the literal `?`.
+  final List<String> _lines;
+
+  /// Display rows; for most types exactly one contains the literal `?`.
+  @override
+  List<String> get lines {
+    if (_lines is EqualUnmodifiableListView) return _lines;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_lines);
+  }
+
+  /// Instruction shown under the rows (e.g. "Find the missing number").
+  @override
+  final String prompt;
+  @override
+  final int answer;
+  @override
+  final String hint;
+  @override
+  final String explanation;
+
+  @JsonKey(name: 'displayType')
+  final String $type;
+
+  @override
+  String toString() {
+    return 'Riddle.sequence(id: $id, difficulty: $difficulty, bucketIndex: $bucketIndex, orderInBucket: $orderInBucket, sequenceType: $sequenceType, lines: $lines, prompt: $prompt, answer: $answer, hint: $hint, explanation: $explanation)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SequenceRiddleImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.difficulty, difficulty) ||
+                other.difficulty == difficulty) &&
+            (identical(other.bucketIndex, bucketIndex) ||
+                other.bucketIndex == bucketIndex) &&
+            (identical(other.orderInBucket, orderInBucket) ||
+                other.orderInBucket == orderInBucket) &&
+            (identical(other.sequenceType, sequenceType) ||
+                other.sequenceType == sequenceType) &&
+            const DeepCollectionEquality().equals(other._lines, _lines) &&
+            (identical(other.prompt, prompt) || other.prompt == prompt) &&
+            (identical(other.answer, answer) || other.answer == answer) &&
+            (identical(other.hint, hint) || other.hint == hint) &&
+            (identical(other.explanation, explanation) ||
+                other.explanation == explanation));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      difficulty,
+      bucketIndex,
+      orderInBucket,
+      sequenceType,
+      const DeepCollectionEquality().hash(_lines),
+      prompt,
+      answer,
+      hint,
+      explanation);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SequenceRiddleImplCopyWith<_$SequenceRiddleImpl> get copyWith =>
+      __$$SequenceRiddleImplCopyWithImpl<_$SequenceRiddleImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<String> givens,
+            String question,
+            int answer,
+            String hint,
+            String explanation)
+        equation,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<TriangleCell> triangles,
+            int answer,
+            String hint,
+            String explanation)
+        trianglePattern,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        sequence,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        figure,
+  }) {
+    return sequence(id, difficulty, bucketIndex, orderInBucket, sequenceType,
+        lines, prompt, answer, hint, explanation);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<String> givens,
+            String question,
+            int answer,
+            String hint,
+            String explanation)?
+        equation,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<TriangleCell> triangles,
+            int answer,
+            String hint,
+            String explanation)?
+        trianglePattern,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
+  }) {
+    return sequence?.call(id, difficulty, bucketIndex, orderInBucket,
+        sequenceType, lines, prompt, answer, hint, explanation);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<String> givens,
+            String question,
+            int answer,
+            String hint,
+            String explanation)?
+        equation,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<TriangleCell> triangles,
+            int answer,
+            String hint,
+            String explanation)?
+        trianglePattern,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
+    required TResult orElse(),
+  }) {
+    if (sequence != null) {
+      return sequence(id, difficulty, bucketIndex, orderInBucket, sequenceType,
+          lines, prompt, answer, hint, explanation);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(EquationRiddle value) equation,
+    required TResult Function(TrianglePatternRiddle value) trianglePattern,
+    required TResult Function(SequenceRiddle value) sequence,
+    required TResult Function(FigureRiddle value) figure,
+  }) {
+    return sequence(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(EquationRiddle value)? equation,
+    TResult? Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult? Function(SequenceRiddle value)? sequence,
+    TResult? Function(FigureRiddle value)? figure,
+  }) {
+    return sequence?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(EquationRiddle value)? equation,
+    TResult Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult Function(SequenceRiddle value)? sequence,
+    TResult Function(FigureRiddle value)? figure,
+    required TResult orElse(),
+  }) {
+    if (sequence != null) {
+      return sequence(this);
+    }
+    return orElse();
+  }
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$SequenceRiddleImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class SequenceRiddle implements Riddle {
+  const factory SequenceRiddle(
+      {required final String id,
+      required final Difficulty difficulty,
+      required final int bucketIndex,
+      required final int orderInBucket,
+      required final String sequenceType,
+      required final List<String> lines,
+      required final String prompt,
+      required final int answer,
+      required final String hint,
+      required final String explanation}) = _$SequenceRiddleImpl;
+
+  factory SequenceRiddle.fromJson(Map<String, dynamic> json) =
+      _$SequenceRiddleImpl.fromJson;
+
+  @override
+  String get id;
+  @override
+  Difficulty get difficulty;
+  @override
+  int get bucketIndex;
+  @override
+  int get orderInBucket;
+
+  /// series | analogy | coding | oddOneOut | operation | missingNumber
+  String get sequenceType;
+
+  /// Display rows; for most types exactly one contains the literal `?`.
+  List<String> get lines;
+
+  /// Instruction shown under the rows (e.g. "Find the missing number").
+  String get prompt;
+  @override
+  int get answer;
+  @override
+  String get hint;
+  @override
+  String get explanation;
+  @override
+  @JsonKey(ignore: true)
+  _$$SequenceRiddleImplCopyWith<_$SequenceRiddleImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$FigureRiddleImplCopyWith<$Res>
+    implements $RiddleCopyWith<$Res> {
+  factory _$$FigureRiddleImplCopyWith(
+          _$FigureRiddleImpl value, $Res Function(_$FigureRiddleImpl) then) =
+      __$$FigureRiddleImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      Difficulty difficulty,
+      int bucketIndex,
+      int orderInBucket,
+      String figureType,
+      List<List<int?>> cells,
+      String prompt,
+      int answer,
+      String hint,
+      String explanation});
+}
+
+/// @nodoc
+class __$$FigureRiddleImplCopyWithImpl<$Res>
+    extends _$RiddleCopyWithImpl<$Res, _$FigureRiddleImpl>
+    implements _$$FigureRiddleImplCopyWith<$Res> {
+  __$$FigureRiddleImplCopyWithImpl(
+      _$FigureRiddleImpl _value, $Res Function(_$FigureRiddleImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? difficulty = null,
+    Object? bucketIndex = null,
+    Object? orderInBucket = null,
+    Object? figureType = null,
+    Object? cells = null,
+    Object? prompt = null,
+    Object? answer = null,
+    Object? hint = null,
+    Object? explanation = null,
+  }) {
+    return _then(_$FigureRiddleImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      difficulty: null == difficulty
+          ? _value.difficulty
+          : difficulty // ignore: cast_nullable_to_non_nullable
+              as Difficulty,
+      bucketIndex: null == bucketIndex
+          ? _value.bucketIndex
+          : bucketIndex // ignore: cast_nullable_to_non_nullable
+              as int,
+      orderInBucket: null == orderInBucket
+          ? _value.orderInBucket
+          : orderInBucket // ignore: cast_nullable_to_non_nullable
+              as int,
+      figureType: null == figureType
+          ? _value.figureType
+          : figureType // ignore: cast_nullable_to_non_nullable
+              as String,
+      cells: null == cells
+          ? _value._cells
+          : cells // ignore: cast_nullable_to_non_nullable
+              as List<List<int?>>,
+      prompt: null == prompt
+          ? _value.prompt
+          : prompt // ignore: cast_nullable_to_non_nullable
+              as String,
+      answer: null == answer
+          ? _value.answer
+          : answer // ignore: cast_nullable_to_non_nullable
+              as int,
+      hint: null == hint
+          ? _value.hint
+          : hint // ignore: cast_nullable_to_non_nullable
+              as String,
+      explanation: null == explanation
+          ? _value.explanation
+          : explanation // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$FigureRiddleImpl implements FigureRiddle {
+  const _$FigureRiddleImpl(
+      {required this.id,
+      required this.difficulty,
+      required this.bucketIndex,
+      required this.orderInBucket,
+      required this.figureType,
+      required final List<List<int?>> cells,
+      required this.prompt,
+      required this.answer,
+      required this.hint,
+      required this.explanation,
+      final String? $type})
+      : _cells = cells,
+        $type = $type ?? 'figure';
+
+  factory _$FigureRiddleImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FigureRiddleImplFromJson(json);
+
+  @override
+  final String id;
+  @override
+  final Difficulty difficulty;
+  @override
+  final int bucketIndex;
+  @override
+  final int orderInBucket;
+
+  /// triangle | box | circle | pyramid | grid | magicSquare |
+  /// magicTriangle | dice | balance | pathSum | miniSudoku
+  @override
+  final String figureType;
+
+  /// figureType-specific numbers, in row order; `null` = the unknown.
+  final List<List<int?>> _cells;
+
+  /// figureType-specific numbers, in row order; `null` = the unknown.
+  @override
+  List<List<int?>> get cells {
+    if (_cells is EqualUnmodifiableListView) return _cells;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_cells);
+  }
+
+  /// Instruction shown under the figure.
+  @override
+  final String prompt;
+  @override
+  final int answer;
+  @override
+  final String hint;
+  @override
+  final String explanation;
+
+  @JsonKey(name: 'displayType')
+  final String $type;
+
+  @override
+  String toString() {
+    return 'Riddle.figure(id: $id, difficulty: $difficulty, bucketIndex: $bucketIndex, orderInBucket: $orderInBucket, figureType: $figureType, cells: $cells, prompt: $prompt, answer: $answer, hint: $hint, explanation: $explanation)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FigureRiddleImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.difficulty, difficulty) ||
+                other.difficulty == difficulty) &&
+            (identical(other.bucketIndex, bucketIndex) ||
+                other.bucketIndex == bucketIndex) &&
+            (identical(other.orderInBucket, orderInBucket) ||
+                other.orderInBucket == orderInBucket) &&
+            (identical(other.figureType, figureType) ||
+                other.figureType == figureType) &&
+            const DeepCollectionEquality().equals(other._cells, _cells) &&
+            (identical(other.prompt, prompt) || other.prompt == prompt) &&
+            (identical(other.answer, answer) || other.answer == answer) &&
+            (identical(other.hint, hint) || other.hint == hint) &&
+            (identical(other.explanation, explanation) ||
+                other.explanation == explanation));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      difficulty,
+      bucketIndex,
+      orderInBucket,
+      figureType,
+      const DeepCollectionEquality().hash(_cells),
+      prompt,
+      answer,
+      hint,
+      explanation);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FigureRiddleImplCopyWith<_$FigureRiddleImpl> get copyWith =>
+      __$$FigureRiddleImplCopyWithImpl<_$FigureRiddleImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<String> givens,
+            String question,
+            int answer,
+            String hint,
+            String explanation)
+        equation,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<TriangleCell> triangles,
+            int answer,
+            String hint,
+            String explanation)
+        trianglePattern,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        sequence,
+    required TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)
+        figure,
+  }) {
+    return figure(id, difficulty, bucketIndex, orderInBucket, figureType, cells,
+        prompt, answer, hint, explanation);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<String> givens,
+            String question,
+            int answer,
+            String hint,
+            String explanation)?
+        equation,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<TriangleCell> triangles,
+            int answer,
+            String hint,
+            String explanation)?
+        trianglePattern,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult? Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
+  }) {
+    return figure?.call(id, difficulty, bucketIndex, orderInBucket, figureType,
+        cells, prompt, answer, hint, explanation);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<String> givens,
+            String question,
+            int answer,
+            String hint,
+            String explanation)?
+        equation,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            List<TriangleCell> triangles,
+            int answer,
+            String hint,
+            String explanation)?
+        trianglePattern,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String sequenceType,
+            List<String> lines,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        sequence,
+    TResult Function(
+            String id,
+            Difficulty difficulty,
+            int bucketIndex,
+            int orderInBucket,
+            String figureType,
+            List<List<int?>> cells,
+            String prompt,
+            int answer,
+            String hint,
+            String explanation)?
+        figure,
+    required TResult orElse(),
+  }) {
+    if (figure != null) {
+      return figure(id, difficulty, bucketIndex, orderInBucket, figureType,
+          cells, prompt, answer, hint, explanation);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(EquationRiddle value) equation,
+    required TResult Function(TrianglePatternRiddle value) trianglePattern,
+    required TResult Function(SequenceRiddle value) sequence,
+    required TResult Function(FigureRiddle value) figure,
+  }) {
+    return figure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(EquationRiddle value)? equation,
+    TResult? Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult? Function(SequenceRiddle value)? sequence,
+    TResult? Function(FigureRiddle value)? figure,
+  }) {
+    return figure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(EquationRiddle value)? equation,
+    TResult Function(TrianglePatternRiddle value)? trianglePattern,
+    TResult Function(SequenceRiddle value)? sequence,
+    TResult Function(FigureRiddle value)? figure,
+    required TResult orElse(),
+  }) {
+    if (figure != null) {
+      return figure(this);
+    }
+    return orElse();
+  }
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$FigureRiddleImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class FigureRiddle implements Riddle {
+  const factory FigureRiddle(
+      {required final String id,
+      required final Difficulty difficulty,
+      required final int bucketIndex,
+      required final int orderInBucket,
+      required final String figureType,
+      required final List<List<int?>> cells,
+      required final String prompt,
+      required final int answer,
+      required final String hint,
+      required final String explanation}) = _$FigureRiddleImpl;
+
+  factory FigureRiddle.fromJson(Map<String, dynamic> json) =
+      _$FigureRiddleImpl.fromJson;
+
+  @override
+  String get id;
+  @override
+  Difficulty get difficulty;
+  @override
+  int get bucketIndex;
+  @override
+  int get orderInBucket;
+
+  /// triangle | box | circle | pyramid | grid | magicSquare |
+  /// magicTriangle | dice | balance | pathSum | miniSudoku
+  String get figureType;
+
+  /// figureType-specific numbers, in row order; `null` = the unknown.
+  List<List<int?>> get cells;
+
+  /// Instruction shown under the figure.
+  String get prompt;
+  @override
+  int get answer;
+  @override
+  String get hint;
+  @override
+  String get explanation;
+  @override
+  @JsonKey(ignore: true)
+  _$$FigureRiddleImplCopyWith<_$FigureRiddleImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 TriangleCell _$TriangleCellFromJson(Map<String, dynamic> json) {

@@ -132,7 +132,7 @@ void main() {
       expect(loaded.themeMode, ThemeMode.light);
     });
 
-    test('load falls back to system theme for invalid themeMode index',
+    test('load falls back to dark theme for invalid themeMode index',
         () async {
       SharedPreferences.setMockInitialValues({
         'mr.settings.themeMode': 999,
@@ -141,8 +141,8 @@ void main() {
       final repo = SharedPrefsSettingsRepository();
       final settings = await repo.load();
 
-      // In current implementation, ThemeMode.system is the default in SharedPrefsSettingsRepository if index is invalid
-      expect(settings.themeMode, ThemeMode.system);
+      // In current implementation, ThemeMode.dark is the default in SharedPrefsSettingsRepository if index is invalid
+      expect(settings.themeMode, ThemeMode.dark);
     });
   });
 

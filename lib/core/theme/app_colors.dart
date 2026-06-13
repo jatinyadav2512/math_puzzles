@@ -93,9 +93,10 @@ class AppColors {
   final Color expertAccent;
   final Color masterAccent;
 
-  /// Convenience: get the accent color for a bucket index (0..4).
+  /// Convenience: get the accent color for a bucket index (0..9).
+  /// Two tiers share each difficulty band, so band = bucketIndex ~/ 2.
   Color bucketAccent(int bucketIndex) {
-    switch (bucketIndex) {
+    switch (bucketIndex ~/ 2) {
       case 0:
         return easyAccent;
       case 1:
@@ -107,7 +108,7 @@ class AppColors {
       case 4:
         return masterAccent;
       default:
-        return easyAccent;
+        return masterAccent;
     }
   }
 }

@@ -11,6 +11,8 @@ class AppSettings with _$AppSettings {
     @Default(ThemeMode.dark) ThemeMode themeMode,
     @Default(true) bool soundEnabled,
     @Default(true) bool hapticsEnabled,
+    @Default(false) bool isPremium,
+    int? premiumExpiryDateMs,
   }) = _AppSettings;
 
   factory AppSettings.fromJson(Map<String, dynamic> json) =>

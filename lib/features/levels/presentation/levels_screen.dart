@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:math_riddles/core/constants/app_constants.dart';
 import 'package:math_riddles/core/theme/app_colors.dart';
 import 'package:math_riddles/core/theme/app_spacing.dart';
 import 'package:math_riddles/core/theme/app_text_styles.dart';
 import 'package:math_riddles/data/models/riddle.dart';
 import 'package:math_riddles/providers/app_state.dart';
 import 'package:provider/provider.dart';
-
-/// Difficulty bucket display names (shared with home_screen).
-const _bucketNames = ['Easy', 'Medium', 'Hard', 'Expert', 'Master'];
 
 /// Levels screen — 4-column grid of 20 tiles for a selected bucket.
 /// See design.md §7.4.
@@ -34,7 +32,9 @@ class LevelsScreen extends StatelessWidget {
     final totalInBucket = bucketRiddles.length;
     final bucketName = bucketIndex == -1
         ? 'All Levels'
-        : (bucketIndex < _bucketNames.length ? _bucketNames[bucketIndex] : '?');
+        : (bucketIndex < AppConstants.tierNames.length
+            ? AppConstants.tierNames[bucketIndex]
+            : '?');
 
     return Scaffold(
       appBar: AppBar(
@@ -220,11 +220,16 @@ class _LevelTileState extends State<_LevelTile>
         ),
       );
     } else {
-      // Locked: muted background, lock icon, reduced opacity.
+      // Locked: muted background, riddle number, reduced opacity.
       tileBackground = c.lockedTile;
       opacity = 0.55;
       tileContent = Center(
-        child: Icon(Icons.lock_outline, size: 20, color: c.onSurfaceMuted),
+        child: Text(
+          '${context.read<AppState>().globalLevelNumber(widget.riddle)}',
+          style: AppTextStyles.tileNumber.copyWith(
+            color: c.onSurfaceMuted,
+          ),
+        ),
       );
     }
 
@@ -260,10 +265,10 @@ class _LevelTileState extends State<_LevelTile>
       context.push('/riddle/${widget.riddle.id}');
     } else {
       // Locked — show snackbar.
-      final previousOrder = widget.riddle.orderInBucket - 1;
+      final previousGlobalLevel = context.read<AppState>().globalLevelNumber(widget.riddle) - 1;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Solve puzzle $previousOrder first.'),
+          content: Text('Solve Level $previousGlobalLevel first.'),
           duration: const Duration(seconds: 3),
         ),
       );

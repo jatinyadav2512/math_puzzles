@@ -9,7 +9,11 @@ import 'package:math_riddles/core/theme/app_text_styles.dart';
 import 'package:math_riddles/core/utils/haptics.dart';
 import 'package:math_riddles/data/models/riddle.dart';
 import 'package:math_riddles/data/services/audio_service.dart';
+import 'package:math_riddles/data/services/ad_service.dart';
 import 'package:math_riddles/providers/app_state.dart';
+import 'package:math_riddles/presentation/widgets/hint_options_modal.dart';
+import 'package:math_riddles/presentation/widgets/premium_info_modal.dart';
+import 'package:math_riddles/features/riddle/presentation/widgets/figure_blocks.dart';
 import 'package:provider/provider.dart';
 
 /// Riddle solve screen — equation display, numpad, answer checking.
@@ -136,8 +140,6 @@ class _RiddleScreenState extends State<RiddleScreen>
 
   Future<void> _showCorrectDialog(Riddle riddle) async {
     final appState = context.read<AppState>();
-    final bucketRiddles = appState.riddlesForBucket(riddle.bucketIndex);
-    final isLastInBucket = riddle.orderInBucket == bucketRiddles.length;
     final nextRiddle = appState.progress.nextRiddle(appState.riddles ?? []);
     final colors = _currentColors;
 
@@ -218,25 +220,14 @@ class _RiddleScreenState extends State<RiddleScreen>
                               ),
                             ),
                             const SizedBox(height: AppSpacing.s4),
-                            riddle.map(
-                              equation: (eq) => Text(
-                                eq.explanation,
-                                style: AppTextStyles.body.copyWith(
-                                  color: colors.onSurface,
-                                  fontSize: 18,
-                                  height: 1.5,
-                                ),
-                                textAlign: TextAlign.center,
+                            Text(
+                              riddle.explanation,
+                              style: AppTextStyles.body.copyWith(
+                                color: colors.onSurface,
+                                fontSize: 18,
+                                height: 1.5,
                               ),
-                              trianglePattern: (tp) => Text(
-                                tp.explanation,
-                                style: AppTextStyles.body.copyWith(
-                                  color: colors.onSurface,
-                                  fontSize: 18,
-                                  height: 1.5,
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
+                              textAlign: TextAlign.center,
                             ),
                           ],
                         ),
@@ -251,7 +242,7 @@ class _RiddleScreenState extends State<RiddleScreen>
                         child: FilledButton(
                           onPressed: () {
                             Navigator.of(context).pop();
-                            if (!isLastInBucket && nextRiddle != null) {
+                            if (nextRiddle != null) {
                               context.pushReplacement('/riddle/${nextRiddle.id}');
                             } else {
                               context.pop(); // Back to levels.
@@ -266,7 +257,7 @@ class _RiddleScreenState extends State<RiddleScreen>
                             elevation: 0,
                           ),
                           child: Text(
-                            (!isLastInBucket && nextRiddle != null)
+                            nextRiddle != null
                                 ? 'NEXT LEVEL'
                                 : 'CONTINUE',
                             style: AppTextStyles.bodyEmphasis.copyWith(
@@ -344,14 +335,6 @@ class _RiddleScreenState extends State<RiddleScreen>
                 tooltip: 'All Levels',
                 onPressed: () => context.push('/levels/-1'),
               ),
-              IconButton(
-                icon: Icon(
-                  _showHint ? Icons.lightbulb : Icons.lightbulb_outline,
-                  color: colors.warning,
-                ),
-                tooltip: 'Hint',
-                onPressed: () => _showHintBottomSheet(riddle),
-              ),
               const SizedBox(width: AppSpacing.s2),
             ],
           ),
@@ -375,15 +358,20 @@ class _RiddleScreenState extends State<RiddleScreen>
                       children: [
                         const SizedBox(height: AppSpacing.s4),
                         // Givens block.
-                        riddle.map(
+                        riddle.maybeMap(
                           equation: (eq) =>
                               _GivensBlock(givens: eq.givens, colors: colors),
                           trianglePattern: (tp) =>
                               _TriangleGivensBlock(triangles: tp.triangles, colors: colors),
+                          sequence: (sq) =>
+                              _SequenceGivensBlock(lines: sq.lines, colors: colors),
+                          figure: (fg) =>
+                              _FigureGivensBlock(figure: fg, colors: colors),
+                          orElse: () => const SizedBox.shrink(),
                         ),
                         const SizedBox(height: AppSpacing.s6),
                         // Question equation.
-                        riddle.map(
+                        riddle.maybeMap(
                           equation: (eq) =>
                               _QuestionRow(question: eq.question, colors: colors),
                           trianglePattern: (_) => Text(
@@ -392,6 +380,19 @@ class _RiddleScreenState extends State<RiddleScreen>
                               color: colors.onSurfaceMuted,
                             ),
                           ),
+                          sequence: (sq) => Text(
+                            sq.prompt,
+                            style: AppTextStyles.caption.copyWith(
+                              color: colors.onSurfaceMuted,
+                            ),
+                          ),
+                          figure: (fg) => Text(
+                            fg.prompt,
+                            style: AppTextStyles.caption.copyWith(
+                              color: colors.onSurfaceMuted,
+                            ),
+                          ),
+                          orElse: () => Text('Find the missing number.', style: AppTextStyles.caption.copyWith(color: colors.onSurfaceMuted)),
                         ),
                         const SizedBox(height: AppSpacing.s6),
                       ],
@@ -411,10 +412,25 @@ class _RiddleScreenState extends State<RiddleScreen>
                     offset: Offset(_shakeAnimation.value, 0),
                     child: child,
                   ),
-                  child: _AnswerField(
-                    value: _typedAnswer,
-                    colors: colors,
-                    accent: accent,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: _AnswerField(
+                          value: _typedAnswer,
+                          colors: colors,
+                          accent: accent,
+                        ),
+                      ),
+                      const SizedBox(width: AppSpacing.s4),
+                      IconButton(
+                        icon: Icon(
+                          _showHint ? Icons.lightbulb : Icons.lightbulb_outline,
+                          color: colors.warning,
+                          size: 32,
+                        ),
+                        onPressed: () => _showHintBottomSheet(riddle),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -451,53 +467,139 @@ class _RiddleScreenState extends State<RiddleScreen>
     );
   }
 
-  void _showHintBottomSheet(Riddle? riddle) {
+  void _showHintBottomSheet(Riddle? riddle) async {
     if (riddle == null) return;
-    setState(() => _showHint = true);
 
+    final action = await showModalBottomSheet<String>(
+      context: context,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      builder: (context) => const HintOptionsModal(),
+    );
+
+    if (action == null) return;
+    
+    if (!mounted) return;
+
+    final adService = context.read<AdService>();
+
+    if (action == 'hint_ad' || action == 'solution_ad') {
+      final success = await adService.showRewardedAd();
+      if (!success) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Failed to load ad or ad was dismissed.')),
+          );
+        }
+        return;
+      }
+    }
+
+    if (!mounted) return;
+
+    if (action == 'hint' || action == 'hint_ad') {
+      setState(() => _showHint = true);
+      _showActualHint(riddle, isSolution: false);
+    } else if (action == 'solution' || action == 'solution_ad') {
+      _showActualHint(riddle, isSolution: true);
+    }
+  }
+
+  void _showActualHint(Riddle riddle, {bool isSolution = false}) {
     final colors = _currentColors;
     showModalBottomSheet<void>(
       context: context,
       backgroundColor: colors.surface,
       shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
       builder: (context) => SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(AppSpacing.s5),
+          padding: const EdgeInsets.all(AppSpacing.s6),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: colors.onSurfaceMuted.withOpacity(0.3),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(height: AppSpacing.s6),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.lightbulb, color: colors.warning, size: 28),
+                  Icon(isSolution ? Icons.key : Icons.lightbulb, color: colors.warning, size: 32),
                   const SizedBox(width: AppSpacing.s3),
                   Text(
-                    'Hint',
+                    isSolution ? 'Solution' : 'Hint',
                     style: AppTextStyles.headline.copyWith(
                       color: colors.onSurface,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
               ),
-              const SizedBox(height: AppSpacing.s4),
-              Text(
-                riddle.map(
-                  equation: (eq) => eq.hint,
-                  trianglePattern: (tp) => tp.hint,
+              const SizedBox(height: AppSpacing.s6),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(AppSpacing.s5),
+                decoration: BoxDecoration(
+                  color: colors.warning.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: colors.warning.withOpacity(0.3)),
                 ),
-                style: AppTextStyles.body.copyWith(
-                  color: colors.onSurface,
-                  fontSize: 18,
+                child: Column(
+                  children: [
+                    if (isSolution) ...[
+                      Text(
+                        riddle.answer.toString(),
+                        style: AppTextStyles.displayLarge.copyWith(
+                          color: colors.onSurface,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpacing.s4),
+                      Container(
+                        height: 1,
+                        color: colors.warning.withOpacity(0.2),
+                      ),
+                      const SizedBox(height: AppSpacing.s4),
+                    ],
+                    Text(
+                      (isSolution ? riddle.explanation : riddle.hint).replaceAll('→', '➔'),
+                      style: AppTextStyles.body.copyWith(
+                        color: colors.onSurface,
+                        fontSize: 18,
+                        height: 1.5,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
                 ),
               ),
-              const SizedBox(height: AppSpacing.s5),
+              const SizedBox(height: AppSpacing.s8),
               SizedBox(
                 width: double.infinity,
+                height: 56,
                 child: FilledButton(
                   onPressed: () => Navigator.pop(context),
-                  child: const Text('Got it'),
+                  style: FilledButton.styleFrom(
+                    backgroundColor: AppColors.brandPrimary,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
+                  child: Text(
+                    'Got it',
+                    style: AppTextStyles.bodyEmphasis.copyWith(
+                      color: Colors.white,
+                      fontSize: 18,
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -892,6 +994,121 @@ class _Numpad extends StatelessWidget {
             onTap: onTap,
             child: Center(child: child),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class _SequenceGivensBlock extends StatelessWidget {
+  const _SequenceGivensBlock({required this.lines, required this.colors});
+
+  final List<String> lines;
+  final AppColors colors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(AppSpacing.s4),
+      decoration: BoxDecoration(
+        color: colors.surfaceMuted,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Column(
+        children: [
+          for (var i = 0; i < lines.length; i++) ...[
+            if (i > 0) const SizedBox(height: AppSpacing.s2),
+            FittedBox(
+              child: Text(
+                lines[i],
+                style: AppTextStyles.riddleEquation.copyWith(
+                  color: colors.onSurface,
+                ),
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _FigureGivensBlock extends StatelessWidget {
+  const _FigureGivensBlock({required this.figure, required this.colors});
+
+  final FigureRiddle figure;
+  final AppColors colors;
+
+  @override
+  Widget build(BuildContext context) {
+    if (figure.figureType == 'triangle') {
+      final triangles = figure.cells.map((row) {
+        return TriangleCell(
+          left: row[0] ?? 0,
+          right: row[1] ?? 0,
+          bottom: row.length > 2 ? row[2] : null,
+        );
+      }).toList();
+      return _TriangleGivensBlock(triangles: triangles, colors: colors);
+    }
+    
+    if (figure.figureType == 'grid' || figure.figureType == 'magicSquare') {
+      return GridGivensBlock(cells: figure.cells, colors: colors);
+    }
+    
+    if (figure.figureType == 'miniSudoku') {
+      return SudokuGivensBlock(cells: figure.cells, colors: colors);
+    }
+    
+    if (figure.figureType == 'circle') {
+      return CircleGivensBlock(cells: figure.cells, colors: colors);
+    }
+    
+    if (figure.figureType == 'box') {
+      return BoxGivensBlock(cells: figure.cells, colors: colors);
+    }
+    
+    if (figure.figureType == 'magicTriangle') {
+      return MagicTriangleGivensBlock(cells: figure.cells, colors: colors);
+    }
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(AppSpacing.s4),
+      decoration: BoxDecoration(
+        color: colors.surfaceMuted,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Center(
+        child: Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          alignment: WrapAlignment.center,
+          children: figure.cells.expand((row) => row).map((cell) {
+            final isMissing = cell == null;
+            return Container(
+              width: 48,
+              height: 48,
+              decoration: BoxDecoration(
+                color: isMissing ? AppColors.brandPrimary.withOpacity(0.2) : colors.surface,
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: isMissing ? AppColors.brandPrimary : colors.divider,
+                  width: 2,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  isMissing ? '?' : cell.toString(),
+                  style: AppTextStyles.riddleEquation.copyWith(
+                    color: isMissing ? AppColors.brandPrimary : colors.onSurface,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            );
+          }).toList(),
         ),
       ),
     );

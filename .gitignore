@@ -52,3 +52,10 @@ secrets.json
 
 # Local configurations
 local.properties
+
+# Custom untracked/unnecessary files
+assets/data/riddles_old.json
+assets/data/riddles_diagrams_samples.json
+docs/screenshots/
+website/
+.clinerules/

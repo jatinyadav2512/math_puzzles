@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:math_riddles/core/constants/app_constants.dart';
 import 'package:math_riddles/core/theme/app_colors.dart';
 import 'package:math_riddles/core/theme/app_spacing.dart';
 import 'package:math_riddles/core/theme/app_text_styles.dart';
-import 'package:math_riddles/data/models/riddle.dart';
 import 'package:math_riddles/providers/app_state.dart';
 import 'package:provider/provider.dart';
 
@@ -91,17 +91,18 @@ class StatsScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
-                children: List.generate(5, (index) {
-                  final difficulty = Difficulty.values[index];
-                  final bucketName =
-                      difficulty.name[0].toUpperCase() + difficulty.name.substring(1);
+                children: List.generate(AppConstants.bucketCount, (index) {
+                  final bucketName = index < AppConstants.tierNames.length
+                      ? AppConstants.tierNames[index]
+                      : 'Tier ${index + 1}';
                   final solved = stats.solvedPerBucket[index] ?? 0;
                   final total = stats.riddlesPerBucket[index] ?? 0;
                   final accent = colors.bucketAccent(index);
 
                   return Padding(
                     padding: EdgeInsets.only(
-                      bottom: index < 4 ? AppSpacing.s4 : 0,
+                      bottom:
+                          index < AppConstants.bucketCount - 1 ? AppSpacing.s4 : 0,
                     ),
                     child: Row(
                       children: [

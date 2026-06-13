@@ -4,10 +4,13 @@ import 'package:math_riddles/core/constants/app_constants.dart';
 import 'package:math_riddles/core/routing/app_router.dart';
 import 'package:math_riddles/core/theme/app_theme.dart';
 import 'package:math_riddles/data/repositories/progress_repository.dart';
+import 'package:math_riddles/data/repositories/remote_riddle_repository.dart';
 import 'package:math_riddles/data/repositories/riddle_repository.dart';
 import 'package:math_riddles/data/repositories/settings_repository.dart';
+import 'package:math_riddles/data/services/ad_service.dart';
 import 'package:math_riddles/data/services/audio_service.dart';
 import 'package:math_riddles/data/services/hint_service.dart';
+import 'package:math_riddles/data/services/rewarded_ad_hint_service.dart';
 import 'package:math_riddles/providers/app_state.dart';
 import 'package:provider/provider.dart';
 
@@ -29,7 +32,9 @@ class _MathRiddlesAppState extends State<MathRiddlesApp> {
       providers: [
         // ─── Repositories ─────────────────────────────
         Provider<RiddleRepository>(
-          create: (_) => LocalRiddleRepository(),
+          create: (_) => RemoteRiddleRepository(
+            backendUrl: 'https://math-puzzles-a88e1.web.app/riddles.json',
+          ),
         ),
         Provider<ProgressRepository>(
           create: (_) => SharedPrefsProgressRepository(),
@@ -39,8 +44,14 @@ class _MathRiddlesAppState extends State<MathRiddlesApp> {
         ),
 
         // ─── Services ─────────────────────────────────
+        Provider<AdService>(
+          create: (_) => AdService()..init(),
+          dispose: (_, service) => service.dispose(),
+        ),
         Provider<HintService>(
-          create: (_) => FreeHintService(),
+          create: (ctx) => RewardedAdHintService(
+            adService: ctx.read<AdService>(),
+          ),
         ),
         Provider<AudioService>(
           create: (_) => AudioService()..init(),

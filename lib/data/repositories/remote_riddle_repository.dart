@@ -1,21 +1,16 @@
 import 'dart:convert';
-
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:http/http.dart' as http;
 import 'package:math_riddles/core/constants/asset_paths.dart';
 import 'package:math_riddles/data/models/riddle.dart';
+import 'package:math_riddles/data/repositories/riddle_repository.dart';
 
-/// Abstract interface for loading riddles.
-/// UI and providers depend on this abstraction, never on the local impl.
-abstract class RiddleRepository {
-  /// Load all riddles from all sources.
-  Future<List<Riddle>> loadAll();
+/// Remote implementation that fetches from a URL with a fallback to local assets.
+class RemoteRiddleRepository implements RiddleRepository {
+  RemoteRiddleRepository({required this.backendUrl});
 
-  /// Look up a single riddle by its stable string id. Returns null if not found.
-  Future<Riddle?> byId(String id);
-}
+  final String backendUrl;
 
-/// Local implementation that reads from bundled JSON assets.
-class LocalRiddleRepository implements RiddleRepository {
   List<Riddle>? _cache;
   Map<String, Riddle>? _byIdMap;
 
@@ -24,16 +19,30 @@ class LocalRiddleRepository implements RiddleRepository {
     if (_cache != null) return _cache!;
 
     final riddles = <Riddle>[];
+    String? jsonString;
 
-    // Load primary riddles JSON.
-    final riddlesJson = await rootBundle.loadString(AssetPaths.riddlesJson);
-    final riddlesList = json.decode(riddlesJson) as List<dynamic>;
+    try {
+      // 1. Attempt to fetch from remote URL
+      final response = await http.get(Uri.parse(backendUrl)).timeout(
+        const Duration(seconds: 5),
+      );
+
+      if (response.statusCode == 200) {
+        jsonString = utf8.decode(response.bodyBytes);
+      } else {
+        throw Exception('Failed to load remote riddles: HTTP ${response.statusCode}');
+      }
+    } catch (e) {
+      // 2. Fallback to local asset if network request fails or times out
+      jsonString = await rootBundle.loadString(AssetPaths.riddlesJson);
+    }
+
+    // 3. Parse JSON
+    final riddlesList = json.decode(jsonString) as List<dynamic>;
     for (final item in riddlesList) {
       try {
         riddles.add(Riddle.fromJson(item as Map<String, dynamic>));
       } on Exception catch (e) {
-        // Debug: throw to surface the offending riddle.
-        // Release: skip and log.
         assert(
           () {
             throw FormatException(
@@ -44,8 +53,6 @@ class LocalRiddleRepository implements RiddleRepository {
         );
       }
     }
-
-    // Removed loading of optional diagram samples JSON to ensure exactly 100 puzzles.
 
     _cache = List.unmodifiable(riddles);
     _byIdMap = {for (final r in riddles) r.id: r};

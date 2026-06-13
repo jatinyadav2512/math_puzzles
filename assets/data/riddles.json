@@ -1,1462 +1,1302 @@
 [
   {
-    "id": "easy_01",
+    "id": "t1_01",
     "difficulty": "easy",
     "bucketIndex": 0,
     "orderInBucket": 1,
-    "givens": [
-      "A+A+A=30"
-    ],
-    "question": "A=?",
-    "answer": 10,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 30 ÷ 3 = 10."
-  },
-  {
-    "id": "easy_02",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 2,
-    "givens": [
-      "A+A=18"
-    ],
-    "question": "A=?",
-    "answer": 9,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 18 ÷ 2 = 9."
-  },
-  {
-    "id": "easy_03",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 3,
-    "givens": [
-      "A+A+A+A=20"
-    ],
-    "question": "A=?",
-    "answer": 5,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 20 ÷ 4 = 5."
-  },
-  {
-    "id": "easy_04",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 4,
-    "givens": [
-      "A+A+A=27"
-    ],
-    "question": "A=?",
-    "answer": 9,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 27 ÷ 3 = 9."
-  },
-  {
-    "id": "easy_05",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 5,
-    "givens": [
-      "A+A+A+A+A=25"
-    ],
-    "question": "A=?",
-    "answer": 5,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 25 ÷ 5 = 5."
-  },
-  {
-    "id": "easy_06",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 6,
-    "givens": [
-      "A+A=24"
-    ],
-    "question": "A=?",
-    "answer": 12,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 24 ÷ 2 = 12."
-  },
-  {
-    "id": "easy_07",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 7,
-    "givens": [
-      "A+A+A=21"
-    ],
-    "question": "A=?",
-    "answer": 7,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 21 ÷ 3 = 7."
-  },
-  {
-    "id": "easy_08",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 8,
-    "givens": [
-      "A+A=16"
-    ],
-    "question": "A=?",
-    "answer": 8,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 16 ÷ 2 = 8."
-  },
-  {
-    "id": "easy_09",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 9,
-    "givens": [
-      "A+A+A+A=32"
-    ],
-    "question": "A=?",
-    "answer": 8,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 32 ÷ 4 = 8."
-  },
-  {
-    "id": "easy_10",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 10,
-    "givens": [
-      "A+A+A=18"
-    ],
-    "question": "A=?",
-    "answer": 6,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 18 ÷ 3 = 6."
-  },
-  {
-    "id": "easy_11",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 11,
-    "givens": [
-      "A+A+A+A+A=20"
-    ],
-    "question": "A+A=?",
-    "answer": 8,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 20 ÷ 5 = 4. So A+A = 8."
-  },
-  {
-    "id": "easy_12",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 12,
-    "givens": [
-      "A+A=14"
-    ],
-    "question": "A+A+A=?",
-    "answer": 21,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 7. So A+A+A = 21."
-  },
-  {
-    "id": "easy_13",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 13,
-    "givens": [
-      "A+A+A=15"
-    ],
-    "question": "A+A+A+A=?",
-    "answer": 20,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 5. So four circles = 20."
-  },
-  {
-    "id": "easy_14",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 14,
-    "givens": [
-      "A+A=12"
-    ],
-    "question": "A+A+A=?",
-    "answer": 18,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 6. Three of them = 18."
-  },
-  {
-    "id": "easy_15",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 15,
-    "givens": [
-      "A+A+A+A=20"
-    ],
-    "question": "A+A=?",
-    "answer": 10,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 5. Two of them = 10."
-  },
-  {
-    "id": "easy_16",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 16,
-    "givens": [
-      "A+A=22"
-    ],
-    "question": "A=?",
-    "answer": 11,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 22 ÷ 2 = 11."
-  },
-  {
-    "id": "easy_17",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 17,
-    "givens": [
-      "A+A+A=24"
-    ],
-    "question": "A=?",
-    "answer": 8,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 24 ÷ 3 = 8."
-  },
-  {
-    "id": "easy_18",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 18,
-    "givens": [
-      "A+A+A+A=28"
-    ],
-    "question": "A=?",
-    "answer": 7,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 28 ÷ 4 = 7."
-  },
-  {
-    "id": "easy_19",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 19,
-    "givens": [
-      "A+A+A=33"
-    ],
-    "question": "A+A=?",
-    "answer": 22,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 11. Two of them = 22."
-  },
-  {
-    "id": "easy_20",
-    "difficulty": "easy",
-    "bucketIndex": 0,
-    "orderInBucket": 20,
-    "givens": [
-      "A+A=10"
-    ],
-    "question": "A+A+A+A+A=?",
-    "answer": 25,
-    "hint": "Count how many copies of A are on the left, then divide the right side by that count to find A.",
-    "explanation": "A = 5. Five of them = 25."
-  },
-  {
-    "id": "medium_01",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 1,
-    "givens": [
-      "A+A=12",
-      "A+B=10"
-    ],
-    "question": "B=?",
-    "answer": 4,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 6. So B = 10 − 6 = 4."
-  },
-  {
-    "id": "medium_02",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 2,
-    "givens": [
-      "A+A+A=18",
-      "A+B=10"
-    ],
-    "question": "A+B+B=?",
-    "answer": 14,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 6, B = 4. So 6 + 4 + 4 = 14."
-  },
-  {
-    "id": "medium_03",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 3,
-    "givens": [
-      "A+A=20",
-      "A+B=15"
-    ],
-    "question": "A-B=?",
-    "answer": 5,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 10, B = 5. 10 − 5 = 5."
-  },
-  {
-    "id": "medium_04",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 4,
-    "givens": [
-      "A+A+A=15",
-      "A+B=8"
-    ],
-    "question": "A×B=?",
-    "answer": 15,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 5, B = 3. 5 × 3 = 15."
-  },
-  {
-    "id": "medium_05",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 5,
-    "givens": [
-      "A+B=12",
-      "A-B=2"
-    ],
-    "question": "A+A+B=?",
-    "answer": 19,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 7, B = 5. 7 + 7 + 5 = 19."
-  },
-  {
-    "id": "medium_06",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 6,
-    "givens": [
-      "A+A+A=21",
-      "A+B=10"
-    ],
-    "question": "B+B+B=?",
-    "answer": 9,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 7, B = 3. 3 × 3 = 9."
-  },
-  {
-    "id": "medium_07",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 7,
-    "givens": [
-      "A+A+A+A=24",
-      "A+B=10"
-    ],
-    "question": "A×B=?",
-    "answer": 24,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 6, B = 4. 6 × 4 = 24."
-  },
-  {
-    "id": "medium_08",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 8,
-    "givens": [
-      "A+A=14",
-      "A+B=12"
-    ],
-    "question": "A+B+B=?",
-    "answer": 17,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 7, B = 5. 7 + 5 + 5 = 17."
-  },
-  {
-    "id": "medium_09",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 9,
-    "givens": [
-      "A+A+A=18",
-      "A+B=11"
-    ],
-    "question": "A-B=?",
-    "answer": 1,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 6, B = 5. 6 − 5 = 1."
-  },
-  {
-    "id": "medium_10",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 10,
-    "givens": [
-      "A+B=15",
-      "A-B=5"
-    ],
-    "question": "A+B×2=?",
-    "answer": 20,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 10, B = 5. 10 + 5×2 = 10 + 10 = 20."
-  },
-  {
-    "id": "medium_11",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 11,
-    "givens": [
-      "A+A=16",
-      "A-B=2"
-    ],
-    "question": "B+B+A=?",
-    "answer": 20,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 8, B = 6. 6 + 6 + 8 = 20."
-  },
-  {
-    "id": "medium_12",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 12,
-    "givens": [
-      "A+A=18",
-      "A+B=14"
-    ],
-    "question": "A×B=?",
-    "answer": 45,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 9, B = 5. 9 × 5 = 45."
-  },
-  {
-    "id": "medium_13",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 13,
-    "givens": [
-      "A+A+A=18",
-      "A+A+B=15"
-    ],
-    "question": "A+B×2=?",
-    "answer": 12,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 6, B = 3. 6 + 3×2 = 12."
-  },
-  {
-    "id": "medium_14",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 14,
-    "givens": [
-      "A+B=11",
-      "A+A=12"
-    ],
-    "question": "B×A=?",
-    "answer": 30,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 6, B = 5. 5 × 6 = 30."
-  },
-  {
-    "id": "medium_15",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 15,
-    "givens": [
-      "A+B=13",
-      "A-B=3"
-    ],
-    "question": "A+B+B=?",
-    "answer": 18,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 8, B = 5. 8 + 5 + 5 = 18."
-  },
-  {
-    "id": "medium_16",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 16,
-    "givens": [
-      "A+B=12",
-      "A+A+B=20"
-    ],
-    "question": "A-B=?",
-    "answer": 4,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 8, B = 4. 8 − 4 = 4."
-  },
-  {
-    "id": "medium_17",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 17,
-    "givens": [
-      "A+A+B=20",
-      "A+B=14"
-    ],
-    "question": "B-A=?",
-    "answer": 2,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 6, B = 8. 8 − 6 = 2."
-  },
-  {
-    "id": "medium_18",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 18,
-    "givens": [
-      "A+B=11",
-      "A+A=14"
-    ],
-    "question": "A+B+B=?",
-    "answer": 15,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 7, B = 4. 7 + 4 + 4 = 15."
-  },
-  {
-    "id": "medium_19",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 19,
-    "givens": [
-      "A+B+B=14",
-      "B+B=8"
-    ],
-    "question": "A×B=?",
-    "answer": 24,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "B = 4, A = 6. 6 × 4 = 24."
-  },
-  {
-    "id": "medium_20",
-    "difficulty": "medium",
-    "bucketIndex": 1,
-    "orderInBucket": 20,
-    "givens": [
-      "A+A+B=20",
-      "A+B+B=16"
-    ],
-    "question": "A+B×2=?",
-    "answer": 16,
-    "hint": "Solve the first equation for A, then substitute into the second to find B.",
-    "explanation": "A = 8, B = 4. 8 + 4×2 = 16."
-  },
-  {
-    "id": "hard_01",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 1,
-    "givens": [
-      "A+A+A=30",
-      "A+B+B=18",
-      "B-C=2"
-    ],
-    "question": "C+A×B=?",
-    "answer": 42,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 10, B = 4, C = 2. 2 + 10×4 = 42."
-  },
-  {
-    "id": "hard_02",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 2,
-    "givens": [
-      "A+A=14",
-      "A+B=10",
-      "B+C=8"
-    ],
-    "question": "A+B×C=?",
-    "answer": 22,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 7, B = 3, C = 5. 7 + 3×5 = 22."
-  },
-  {
-    "id": "hard_03",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 3,
-    "givens": [
-      "A+A+A=24",
-      "A+B=11",
-      "B+C=10"
-    ],
-    "question": "A×B+C=?",
-    "answer": 31,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 8, B = 3, C = 7. 8×3 + 7 = 31."
-  },
-  {
-    "id": "hard_04",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 4,
-    "givens": [
-      "A+A+A+A=20",
-      "A+B=12",
-      "B+C=10"
-    ],
-    "question": "A+B×C=?",
-    "answer": 26,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 5, B = 7, C = 3. 5 + 7×3 = 26."
-  },
-  {
-    "id": "hard_05",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 5,
-    "givens": [
-      "A+A=18",
-      "A+B=12",
-      "B+C=10"
-    ],
-    "question": "C×B+A=?",
-    "answer": 30,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 9, B = 3, C = 7. 7×3 + 9 = 30."
-  },
-  {
-    "id": "hard_06",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 6,
-    "givens": [
-      "A+A+A=15",
-      "A+B=11",
-      "B+C=10"
-    ],
-    "question": "A×C+B=?",
-    "answer": 26,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 5, B = 6, C = 4. 5×4 + 6 = 26."
-  },
-  {
-    "id": "hard_07",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 7,
-    "givens": [
-      "A+A+A=21",
-      "A+B=10",
-      "B+C=8"
-    ],
-    "question": "C×B+A=?",
-    "answer": 22,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 7, B = 3, C = 5. 5×3 + 7 = 22."
-  },
-  {
-    "id": "hard_08",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 8,
-    "givens": [
-      "A+A=16",
-      "A+B=11",
-      "B+C=10"
-    ],
-    "question": "A+B×C=?",
-    "answer": 29,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 8, B = 3, C = 7. 8 + 3×7 = 29."
-  },
-  {
-    "id": "hard_09",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 9,
-    "givens": [
-      "A+A+A+A=20",
-      "A+B=12",
-      "B-C=4"
-    ],
-    "question": "A×C+B=?",
-    "answer": 22,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 5, B = 7, C = 3. 5×3 + 7 = 22."
-  },
-  {
-    "id": "hard_10",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 10,
-    "givens": [
-      "A+A=14",
-      "A+B=10",
-      "B+C=8"
-    ],
-    "question": "A+B×C=?",
-    "answer": 22,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 7, B = 3, C = 5. 7 + 3×5 = 22."
-  },
-  {
-    "id": "hard_11",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 11,
-    "givens": [
-      "A+A=12",
-      "A+B+B=14",
-      "B+C+C=14"
-    ],
-    "question": "A×B-C=?",
-    "answer": 19,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 6, B = 4, C = 5. 6×4 − 5 = 19."
-  },
-  {
-    "id": "hard_12",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 12,
-    "givens": [
-      "A+A+A=18",
-      "A+B=10",
-      "B×C=12"
-    ],
-    "question": "A+B×C=?",
-    "answer": 18,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 6, B = 4, C = 3. 6 + 4×3 = 18."
-  },
-  {
-    "id": "hard_13",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 13,
-    "givens": [
-      "A+A+B=16",
-      "A+B=11",
-      "B+C+C=14"
-    ],
-    "question": "A×C-B=?",
-    "answer": 14,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 5, B = 6, C = 4. 5×4 − 6 = 14."
-  },
-  {
-    "id": "hard_14",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 14,
-    "givens": [
-      "A+B=11",
-      "A-B=3",
-      "B+C=10"
-    ],
-    "question": "A+B×C=?",
-    "answer": 31,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 7, B = 4, C = 6. 7 + 4×6 = 31."
-  },
-  {
-    "id": "hard_15",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 15,
-    "givens": [
-      "A+A+A=15",
-      "A+B=8",
-      "B×C=12"
-    ],
-    "question": "A-B+C=?",
-    "answer": 6,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 5, B = 3, C = 4. 5 − 3 + 4 = 6."
-  },
-  {
-    "id": "hard_16",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 16,
-    "givens": [
-      "A+A=14",
-      "A-B=3",
-      "B+C=9"
-    ],
-    "question": "A+B×C=?",
-    "answer": 27,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 7, B = 4, C = 5. 7 + 4×5 = 27."
-  },
-  {
-    "id": "hard_17",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 17,
-    "givens": [
-      "A+A+A+A=20",
-      "A+B=12",
-      "B-C=4"
-    ],
-    "question": "A×C+B=?",
-    "answer": 22,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 5, B = 7, C = 3. 5×3 + 7 = 22."
-  },
-  {
-    "id": "hard_18",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 18,
-    "givens": [
-      "A+B=11",
-      "A-B=3",
-      "B+C=10"
-    ],
-    "question": "A×B-C=?",
-    "answer": 22,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 7, B = 4, C = 6. 7×4 − 6 = 22."
-  },
-  {
-    "id": "hard_19",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 19,
-    "givens": [
-      "A+B+B=14",
-      "A+B=9",
-      "B+C+C=11"
-    ],
-    "question": "A×C+B=?",
-    "answer": 17,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 4, B = 5, C = 3. 4×3 + 5 = 17."
-  },
-  {
-    "id": "hard_20",
-    "difficulty": "hard",
-    "bucketIndex": 2,
-    "orderInBucket": 20,
-    "givens": [
-      "A+B=11",
-      "A+B+B=15",
-      "B×C=12"
-    ],
-    "question": "A+B×C=?",
-    "answer": 19,
-    "hint": "Solve in order: A from equation 1, then B, then C. Multiplication happens before addition in the question.",
-    "explanation": "A = 7, B = 4, C = 3. 7 + 4×3 = 19."
-  },
-  {
-    "id": "expert_01",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 1,
-    "givens": [
-      "A×A=16",
-      "A+B=10",
-      "B+C+C=14"
-    ],
-    "question": "A×B+C=?",
-    "answer": 28,
-    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
-    "explanation": "A = 4, B = 6, C = 4. 4×6 + 4 = 28."
-  },
-  {
-    "id": "expert_02",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 2,
-    "givens": [
-      "A+A+A=21",
-      "A×B=14",
-      "B+C=9"
-    ],
-    "question": "A+B×C=?",
-    "answer": 21,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 7, B = 2, C = 7. 7 + 2×7 = 21."
-  },
-  {
-    "id": "expert_03",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 3,
-    "givens": [
-      "A×2=14",
-      "A+B=12",
-      "B+C=9"
-    ],
-    "question": "A+B×C=?",
-    "answer": 27,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 7, B = 5, C = 4. 7 + 5×4 = 27."
-  },
-  {
-    "id": "expert_04",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 4,
-    "givens": [
-      "A+A=18",
-      "A-B=3",
-      "B×C=12"
-    ],
-    "question": "A+B×C=?",
-    "answer": 21,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 9, B = 6, C = 2. 9 + 6×2 = 21."
-  },
-  {
-    "id": "expert_05",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 5,
-    "givens": [
-      "A×A=25",
-      "A+B=11",
-      "B+C+C=14"
-    ],
-    "question": "A×C-B=?",
-    "answer": 14,
-    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
-    "explanation": "A = 5, B = 6, C = 4. 5×4 − 6 = 14."
-  },
-  {
-    "id": "expert_06",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 6,
-    "givens": [
-      "A+A+A+A=24",
-      "A×B=18",
-      "B+C=8"
-    ],
-    "question": "A+B×C=?",
-    "answer": 21,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 6, B = 3, C = 5. 6 + 3×5 = 21."
-  },
-  {
-    "id": "expert_07",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 7,
-    "givens": [
-      "A×A=36",
-      "A+B=10",
-      "B×C=12"
-    ],
-    "question": "A+B×C=?",
-    "answer": 18,
-    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
-    "explanation": "A = 6, B = 4, C = 3. 6 + 4×3 = 18."
-  },
-  {
-    "id": "expert_08",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 8,
-    "givens": [
-      "A+A+A=24",
-      "A-B=5",
-      "B+C+C=11"
-    ],
-    "question": "A+B×C=?",
-    "answer": 20,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 8, B = 3, C = 4. 8 + 3×4 = 20."
-  },
-  {
-    "id": "expert_09",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 9,
-    "givens": [
-      "A+B=12",
-      "A-B=4",
-      "B×C=12"
-    ],
-    "question": "A+B×C=?",
-    "answer": 20,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 8, B = 4, C = 3. 8 + 4×3 = 20."
-  },
-  {
-    "id": "expert_10",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 10,
-    "givens": [
-      "A×A=49",
-      "A+B=11",
-      "B+C=9"
-    ],
-    "question": "A-B+C×C=?",
-    "answer": 28,
-    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
-    "explanation": "A = 7, B = 4, C = 5. 7 − 4 + 5×5 = 28."
-  },
-  {
-    "id": "expert_11",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 11,
-    "givens": [
-      "A+A+A+A=20",
-      "A×B=15",
-      "B+C=10"
-    ],
-    "question": "A×C-B×B=?",
-    "answer": 26,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 5, B = 3, C = 7. 5×7 − 3×3 = 35 − 9 = 26."
-  },
-  {
-    "id": "expert_12",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 12,
-    "givens": [
-      "A+A+B=14",
-      "A+B=10",
-      "B×C=24"
-    ],
-    "question": "A+B×C=?",
-    "answer": 28,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 4, B = 6, C = 4. 4 + 6×4 = 28."
-  },
-  {
-    "id": "expert_13",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 13,
-    "givens": [
-      "A×3=15",
-      "A+B=12",
-      "B-C=3"
-    ],
-    "question": "A+B×C=?",
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["3,  5,  9,  17,  ?"],
+    "prompt": "Find the missing number.",
     "answer": 33,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 5, B = 7, C = 4. 5 + 7×4 = 33."
+    "hint": "Look at the differences between consecutive numbers.",
+    "explanation": "The differences are doubling: +2, +4, +8, so the next difference is +16. 17 + 16 = 33."
   },
   {
-    "id": "expert_14",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 14,
-    "givens": [
-      "A+A+A=18",
-      "A×B=24",
-      "B+C+C=14"
-    ],
-    "question": "A×B-C=?",
-    "answer": 19,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 6, B = 4, C = 5. 6×4 − 5 = 19."
+    "id": "t1_02",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 2,
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["12  :  9    ::    14  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 16,
+    "hint": "Think about the square of each number, then sum its digits.",
+    "explanation": "12 squared is 144, and 1 + 4 + 4 = 9. 14 squared is 196, and 1 + 9 + 6 = 16."
   },
   {
-    "id": "expert_15",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 15,
-    "givens": [
-      "A+A+A+A+A=15",
-      "A+B=10",
-      "B×C=14"
-    ],
-    "question": "A×B+C=?",
-    "answer": 23,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 3, B = 7, C = 2. 3×7 + 2 = 23."
+    "id": "t1_03",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 3,
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[2, 3, 8], [4, 1, 8], [5, 4, null]],
+    "prompt": "Find the missing number.",
+    "answer": 12,
+    "hint": "Add the top two numbers of each triangle and adjust with a constant.",
+    "explanation": "Bottom = left + right + 3. For the last triangle: 5 + 4 + 3 = 12."
   },
   {
-    "id": "expert_16",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 16,
-    "givens": [
-      "A×A=64",
-      "A-B=3",
-      "B+C+C=11"
-    ],
-    "question": "A+B×C=?",
-    "answer": 23,
-    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
-    "explanation": "A = 8, B = 5, C = 3. 8 + 5×3 = 23."
+    "id": "t1_04",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 4,
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["3 → 6", "4 → 12", "5 → ?"],
+    "prompt": "Find the missing value.",
+    "answer": 20,
+    "hint": "Multiply each number by the number that comes right before it.",
+    "explanation": "Rule: n × (n - 1). So, 5 × 4 = 20."
   },
   {
-    "id": "expert_17",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 17,
-    "givens": [
-      "A+A+A=27",
-      "A-B=4",
-      "B+C+C=11"
-    ],
-    "question": "A+B×C=?",
+    "id": "t1_05",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 5,
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["16,   25,   36,   45,   49"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 45,
+    "hint": "Four of these numbers share a very common mathematical property.",
+    "explanation": "All numbers are perfect squares except 45."
+  },
+  {
+    "id": "t1_06",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 6,
+    "displayType": "figure",
+    "figureType": "circle",
+    "cells": [[2, 4, 6, null], [4, 8, 12, 16]],
+    "prompt": "Find the missing number.",
+    "answer": 8,
+    "hint": "Compare the top ring of numbers with the bottom ring.",
+    "explanation": "Each number in the bottom ring is double its counterpart in the top ring: 2→4, 4→8, 6→12, so the missing number is 16 ÷ 2 = 8."
+  },
+  {
+    "id": "t1_07",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 7,
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["3 # 4 = 10", "5 # 2 = 12", "6 # 3 = ?"],
+    "prompt": "Crack the rule, then solve.",
+    "answer": 15,
+    "hint": "Multiply the first number by 2, then add the second.",
+    "explanation": "Rule: 2a + b. So, 2(6) + 3 = 15."
+  },
+  {
+    "id": "t1_08",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 8,
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[12, 8, 20], [15, 9, 24], [18, 7, null]],
+    "prompt": "Find the missing number.",
+    "answer": 25,
+    "hint": "Look at how the columns interact horizontally.",
+    "explanation": "Col 3 = Col 1 + Col 2. For the last row: 18 + 7 = 25."
+  },
+  {
+    "id": "t1_09",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 9,
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["5  ×  ?  −  3  =  17"],
+    "prompt": "Find the missing number.",
+    "answer": 4,
+    "hint": "Undo the subtraction first.",
+    "explanation": "17 + 3 = 20, then 20 ÷ 5 = 4."
+  },
+  {
+    "id": "t1_10",
+    "difficulty": "easy",
+    "bucketIndex": 0,
+    "orderInBucket": 10,
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 11", "product = 24"],
+    "prompt": "Two numbers fit both clues — enter the larger one.",
+    "answer": 8,
+    "hint": "Think of factors of 24.",
+    "explanation": "The numbers are 3 and 8 (3 + 8 = 11, 3 × 8 = 24). The larger one is 8."
+  },
+  {
+    "id": "t2_01",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 1,
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["2,  10,  4,  12,  6,  ?"],
+    "prompt": "Find the missing number.",
+    "answer": 14,
+    "hint": "This sequence alternates between two different operations.",
+    "explanation": "The pattern alternates between +8 and −6: 2 (+8) = 10, 10 (−6) = 4, 4 (+8) = 12, 12 (−6) = 6, 6 (+8) = 14."
+  },
+  {
+    "id": "t2_02",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 2,
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["4  :  15    ::    6  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 35,
+    "hint": "Square the first number, then subtract 1.",
+    "explanation": "Rule: n² − 1. For the second part: 6² − 1 = 35."
+  },
+  {
+    "id": "t2_03",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 3,
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[3, 4, 10], [5, 2, 8], [4, 4, null]],
+    "prompt": "Find the missing number.",
+    "answer": 14,
+    "hint": "Multiply the top two numbers of each triangle, then subtract a small even number.",
+    "explanation": "Bottom = left × right − 2. For the last triangle: 4 × 4 − 2 = 14."
+  },
+  {
+    "id": "t2_04",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 4,
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["2 → 8", "3 → 15", "4 → ?"],
+    "prompt": "Find the missing value.",
     "answer": 24,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 9, B = 5, C = 3. 9 + 5×3 = 24."
+    "hint": "Multiply each number by itself plus 2.",
+    "explanation": "Rule: n × (n + 2). For 4: 4 × 6 = 24."
   },
   {
-    "id": "expert_18",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 18,
-    "givens": [
-      "A+B+C=15",
-      "A+B=10",
-      "A-B=2"
-    ],
-    "question": "A×B-C=?",
-    "answer": 19,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 6, B = 4, C = 5. 6×4 − 5 = 19."
+    "id": "t2_05",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 5,
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["8,   15,   22,   28,   29"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 28,
+    "hint": "Four of these numbers leave a remainder of 1 when divided by 7.",
+    "explanation": "8, 15, 22, and 29 are all of the form 7k + 1. 28 is a pure multiple of 7."
   },
   {
-    "id": "expert_19",
-    "difficulty": "expert",
-    "bucketIndex": 3,
-    "orderInBucket": 19,
-    "givens": [
-      "A×A=81",
-      "A-B=4",
-      "B+C=8"
-    ],
-    "question": "A+B×C=?",
+    "id": "t2_06",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 6,
+    "displayType": "figure",
+    "figureType": "box",
+    "cells": [[1, 2, 3, 4, 12], [2, 1, 4, 3, null]],
+    "prompt": "Find the centre number.",
+    "answer": 12,
+    "hint": "Add all four corners together, then add a small constant.",
+    "explanation": "Centre = sum of corners + 2. For the second box: 2 + 1 + 4 + 3 + 2 = 12."
+  },
+  {
+    "id": "t2_07",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 7,
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["3 # 4 = 11", "5 # 2 = 9", "6 # 4 = ?"],
+    "prompt": "Crack the rule, then solve.",
+    "answer": 23,
+    "hint": "Multiply the two numbers, then subtract 1.",
+    "explanation": "Rule: a × b − 1. For the last line: 6 × 4 − 1 = 23."
+  },
+  {
+    "id": "t2_08",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 8,
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[5, 2, 8], [6, 3, 9], [7, 4, null]],
+    "prompt": "Find the missing number.",
+    "answer": 10,
+    "hint": "Multiply the first column by 2, then subtract the second column.",
+    "explanation": "Col 3 = Col 1 × 2 − Col 2. For the last row: 7 × 2 − 4 = 10."
+  },
+  {
+    "id": "t2_09",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 9,
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["?  ×  3  +  4  =  19"],
+    "prompt": "Find the missing number.",
+    "answer": 5,
+    "hint": "Undo the addition first, then divide.",
+    "explanation": "19 − 4 = 15, then 15 ÷ 3 = 5."
+  },
+  {
+    "id": "t2_10",
+    "difficulty": "easy",
+    "bucketIndex": 1,
+    "orderInBucket": 10,
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 10", "product = 21"],
+    "prompt": "Two numbers fit both clues — enter the larger one.",
+    "answer": 7,
+    "hint": "Look at factor pairs of 21.",
+    "explanation": "The numbers are 3 and 7 (3 + 7 = 10, 3 × 7 = 21). The larger one is 7."
+  },
+  {
+    "id": "t3_01",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 1,
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["3,  6,  11,  18,  ?"],
+    "prompt": "Find the missing number.",
+    "answer": 27,
+    "hint": "Look at the differences between numbers, or think about perfect squares.",
+    "explanation": "The sequence is perfect squares plus 2: 1²+2, 2²+2, 3²+2, 4²+2. The next is 5² + 2 = 27."
+  },
+  {
+    "id": "t3_02",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 2,
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["14  :  41    ::    25  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 52,
+    "hint": "Reverse the digits.",
+    "explanation": "The digits are reversed: 14 becomes 41, so 25 becomes 52."
+  },
+  {
+    "id": "t3_03",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 3,
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[3, 2, 11], [4, 3, 19], [5, 2, null]],
+    "prompt": "Find the missing number.",
+    "answer": 27,
+    "hint": "Square the left number and add the right number.",
+    "explanation": "Bottom = left² + right. For the last triangle: 5² + 2 = 27."
+  },
+  {
+    "id": "t3_04",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 4,
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["2 → 8", "3 → 9", "4 → ?"],
+    "prompt": "Find the missing value.",
+    "answer": 10,
+    "hint": "Cube the input number, then find the sum of the digits of the result.",
+    "explanation": "2³ = 8 (sum is 8), 3³ = 27 (2+7=9), 4³ = 64 (6+4=10)."
+  },
+  {
+    "id": "t3_05",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 5,
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["11,   13,   15,   17,   19"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 15,
+    "hint": "Check which numbers are prime.",
+    "explanation": "All numbers are prime except 15, which is composite."
+  },
+  {
+    "id": "t3_06",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 6,
+    "displayType": "figure",
+    "figureType": "circle",
+    "cells": [[4, 8, 12, null], [16, 12, 8, 11]],
+    "prompt": "Find the missing number.",
+    "answer": 9,
+    "hint": "Opposite sectors of the circle add up to the exact same total.",
+    "explanation": "Opposite sectors sum to 20: 4+16=20, 8+12=20, 12+8=20, so ? + 11 = 20, which gives 9."
+  },
+  {
+    "id": "t3_07",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 7,
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["2 # 3 = 15", "4 # 1 = 15", "5 # 3 = ?"],
+    "prompt": "Crack the rule, then solve.",
     "answer": 24,
-    "hint": "Chain through the equations: A, then B, then C. Note: A×A means A² — take the positive root.",
-    "explanation": "A = 9, B = 5, C = 3. 9 + 5×3 = 24."
+    "hint": "Add the two numbers, then scale by a constant multiplier.",
+    "explanation": "Rule: (a + b) × 3. For the last line: (5 + 3) × 3 = 24."
   },
   {
-    "id": "expert_20",
-    "difficulty": "expert",
+    "id": "t3_08",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 8,
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[4, 5, 6], [6, 10, 15], [10, 15, null]],
+    "prompt": "Find the missing number.",
+    "answer": 21,
+    "hint": "Look at the vertical relationship: Row 3 = Row 1 squared minus Row 2.",
+    "explanation": "Row 3 = Row 1² − Row 2. For column 3: 6² − 15 = 36 − 15 = 21."
+  },
+  {
+    "id": "t3_09",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 9,
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["(  ?  +  2  )  ×  4  =  36"],
+    "prompt": "Find the missing number.",
+    "answer": 7,
+    "hint": "Divide by 4 first, then subtract 2.",
+    "explanation": "36 ÷ 4 = 9, then 9 − 2 = 7."
+  },
+  {
+    "id": "t3_10",
+    "difficulty": "medium",
+    "bucketIndex": 2,
+    "orderInBucket": 10,
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 13", "product = 36"],
+    "prompt": "Two numbers fit both clues — enter the smaller one.",
+    "answer": 4,
+    "hint": "Which factors of 36 add up to 13?",
+    "explanation": "The numbers are 4 and 9 (4 + 9 = 13, 4 × 9 = 36). The smaller is 4."
+  },
+  {
+    "id": "t4_01",
+    "difficulty": "medium",
     "bucketIndex": 3,
-    "orderInBucket": 20,
-    "givens": [
-      "A+A+B=20",
-      "A+B=13",
-      "B×C=24"
-    ],
-    "question": "A+B×C=?",
-    "answer": 31,
-    "hint": "Chain through the equations: A, then B, then C.",
-    "explanation": "A = 7, B = 6, C = 4. 7 + 6×4 = 31."
+    "orderInBucket": 1,
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["2,  4,  7,  12,  19,  ?"],
+    "prompt": "Find the missing number.",
+    "answer": 30,
+    "hint": "Look at the differences between the numbers. They are not odd numbers.",
+    "explanation": "The sequence increases by consecutive prime numbers: +2, +3, +5, +7, so the next increase is +11. 19 + 11 = 30."
   },
   {
-    "id": "master_01",
-    "difficulty": "master",
+    "id": "t4_02",
+    "difficulty": "medium",
+    "bucketIndex": 3,
+    "orderInBucket": 2,
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["5  :  30    ::    8  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 72,
+    "hint": "Multiply the number by the next integer.",
+    "explanation": "Rule: n × (n + 1). For the second part: 8 × 9 = 72."
+  },
+  {
+    "id": "t4_03",
+    "difficulty": "medium",
+    "bucketIndex": 3,
+    "orderInBucket": 3,
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[3, 2, 9], [4, 4, 20], [5, 3, null]],
+    "prompt": "Find the missing number.",
+    "answer": 20,
+    "hint": "Multiply the left top number by the right top number increased by 1.",
+    "explanation": "Bottom = left × (right + 1). For the last triangle: 5 × (3 + 1) = 20."
+  },
+  {
+    "id": "t4_04",
+    "difficulty": "medium",
+    "bucketIndex": 3,
+    "orderInBucket": 4,
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["123 → 6", "234 → 9", "345 → ?"],
+    "prompt": "Find the missing value.",
+    "answer": 12,
+    "hint": "Find the sum of the digits.",
+    "explanation": "The code is the sum of the digits: 3 + 4 + 5 = 12."
+  },
+  {
+    "id": "t4_05",
+    "difficulty": "medium",
+    "bucketIndex": 3,
+    "orderInBucket": 5,
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["2,   3,   5,   7,   9"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 9,
+    "hint": "All but one of these are prime numbers.",
+    "explanation": "Every number is prime except 9, which is composite."
+  },
+  {
+    "id": "t4_06",
+    "difficulty": "medium",
+    "bucketIndex": 3,
+    "orderInBucket": 6,
+    "displayType": "figure",
+    "figureType": "box",
+    "cells": [[2, 3, 1, 5, 12], [3, 4, 2, 10, null]],
+    "prompt": "Find the centre number.",
+    "answer": 24,
+    "hint": "Multiply the top two corners, then add the bottom two corners.",
+    "explanation": "Centre = (top-left × top-right) + bottom-left + bottom-right. For the second box: (3 × 4) + 2 + 10 = 24."
+  },
+  {
+    "id": "t4_07",
+    "difficulty": "medium",
+    "bucketIndex": 3,
+    "orderInBucket": 7,
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["4 # 3 = 5", "5 # 2 = 3", "6 # 3 = ?"],
+    "prompt": "Crack the rule, then solve.",
+    "answer": 9,
+    "hint": "Multiply the two numbers, then subtract their sum.",
+    "explanation": "Rule: (a × b) − (a + b). For the last line: (6 × 3) − (6 + 3) = 18 − 9 = 9."
+  },
+  {
+    "id": "t4_08",
+    "difficulty": "medium",
+    "bucketIndex": 3,
+    "orderInBucket": 8,
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[5, 3, 16], [6, 4, 20], [7, 5, null]],
+    "prompt": "Find the missing number.",
+    "answer": 24,
+    "hint": "Compare Col 3 with the squares of the first two columns.",
+    "explanation": "Col 3 = Col 1² − Col 2². For the last row: 7² − 5² = 49 − 25 = 24."
+  },
+  {
+    "id": "t4_09",
+    "difficulty": "medium",
+    "bucketIndex": 3,
+    "orderInBucket": 9,
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["3  ×  ?  +  8  =  29"],
+    "prompt": "Find the missing number.",
+    "answer": 7,
+    "hint": "Subtract 8 first, then divide by 3.",
+    "explanation": "29 − 8 = 21, then 21 ÷ 3 = 7."
+  },
+  {
+    "id": "t4_10",
+    "difficulty": "medium",
+    "bucketIndex": 3,
+    "orderInBucket": 10,
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 14", "product = 45"],
+    "prompt": "Two numbers fit both clues — enter the larger one.",
+    "answer": 9,
+    "hint": "Look at the factor pairs of 45.",
+    "explanation": "The numbers are 5 and 9 (5 + 9 = 14, 5 × 9 = 45). The larger is 9."
+  },
+  {
+    "id": "t5_01",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 1,
-    "givens": [
-      "A+A+A=21",
-      "B+B=10",
-      "C+D=11",
-      "D-C=3"
-    ],
-    "question": "A×C-B+D=?",
-    "answer": 30,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 7, B = 5, C = 4, D = 7. 7×4 − 5 + 7 = 30."
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["1,  4,  5,  9,  14,  23,  ?"],
+    "prompt": "Find the missing number.",
+    "answer": 37,
+    "hint": "Each number is generated using the preceding terms.",
+    "explanation": "This is a Fibonacci-like sequence where each number is the sum of the previous two: 14 + 23 = 37."
   },
   {
-    "id": "master_02",
-    "difficulty": "master",
+    "id": "t5_02",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 2,
-    "givens": [
-      "A×A=49",
-      "A+B=10",
-      "B×C=12",
-      "C-D=2"
-    ],
-    "question": "A+B×C-D=?",
-    "answer": 17,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
-    "explanation": "A = 7, B = 3, C = 4, D = 2. 7 + 3×4 − 2 = 17."
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["3  :  18    ::    5  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 50,
+    "hint": "Square the input number first, then multiply by 2.",
+    "explanation": "Rule: 2n². For the second part: 2 × 5² = 2 × 25 = 50."
   },
   {
-    "id": "master_03",
-    "difficulty": "master",
+    "id": "t5_03",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 3,
-    "givens": [
-      "A+B=9",
-      "A-B=3",
-      "C+D=11",
-      "C-D=1"
-    ],
-    "question": "A+B×C-D=?",
-    "answer": 19,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 6, B = 3, C = 6, D = 5. 6 + 3×6 − 5 = 19."
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[4, 3, 14], [6, 1, 14], [7, 5, null]],
+    "prompt": "Find the missing number.",
+    "answer": 24,
+    "hint": "Add the top two numbers of each triangle and double the sum.",
+    "explanation": "Bottom = (left + right) × 2. For the last triangle: (7 + 5) × 2 = 24."
   },
   {
-    "id": "master_04",
-    "difficulty": "master",
+    "id": "t5_04",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 4,
-    "givens": [
-      "A+A+A+A=24",
-      "A×B=18",
-      "B+C=10",
-      "C-D=2"
-    ],
-    "question": "A×B+C×D=?",
-    "answer": 53,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 6, B = 3, C = 7, D = 5. 6×3 + 7×5 = 18 + 35 = 53."
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["2 → 7", "3 → 26", "4 → ?"],
+    "prompt": "Find the missing value.",
+    "answer": 63,
+    "hint": "Cube the input number, then subtract a small value.",
+    "explanation": "Rule: n³ − 1. For 4: 4³ − 1 = 64 − 1 = 63."
   },
   {
-    "id": "master_05",
-    "difficulty": "master",
+    "id": "t5_05",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 5,
-    "givens": [
-      "A+A=18",
-      "A-B=3",
-      "B×C=18",
-      "C+D=10"
-    ],
-    "question": "A+B×C-D=?",
-    "answer": 20,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 9, B = 6, C = 3, D = 7. 9 + 6×3 − 7 = 20."
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["18,   27,   36,   48,   54"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 48,
+    "hint": "Check which numbers are divisible by 9.",
+    "explanation": "All numbers are multiples of 9 except 48."
   },
   {
-    "id": "master_06",
-    "difficulty": "master",
+    "id": "t5_06",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 6,
-    "givens": [
-      "A×A=36",
-      "A+B=11",
-      "B×C=15",
-      "C+D=10"
-    ],
-    "question": "A+B×C+D=?",
-    "answer": 28,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
-    "explanation": "A = 6, B = 5, C = 3, D = 7. 6 + 5×3 + 7 = 28."
+    "displayType": "figure",
+    "figureType": "circle",
+    "cells": [[2, 3, 4, 5], [4, 9, 16, null]],
+    "prompt": "Find the missing number.",
+    "answer": 25,
+    "hint": "Look at the relationship between the top half and bottom half of the circle.",
+    "explanation": "Each number in the bottom half is the square of its opposite number in the top half: 2²=4, 3²=9, 4²=16, so the missing number is 5² = 25."
   },
   {
-    "id": "master_07",
-    "difficulty": "master",
+    "id": "t5_07",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 7,
-    "givens": [
-      "A+B+C=15",
-      "A-B=4",
-      "B+C=7"
-    ],
-    "question": "A×C-B=?",
-    "answer": 20,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 8, B = 4, C = 3. 8×3 − 4 = 20."
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["5 # 3 = 16", "6 # 2 = 32", "7 # 4 = ?"],
+    "prompt": "Crack the rule, then solve.",
+    "answer": 33,
+    "hint": "Square both numbers, then find the difference.",
+    "explanation": "Rule: a² − b² = (a − b) × (a + b). For the last line: 7² − 4² = 49 − 16 = 33."
   },
   {
-    "id": "master_08",
-    "difficulty": "master",
+    "id": "t5_08",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 8,
-    "givens": [
-      "A×3=18",
-      "A+B=11",
-      "B×C=15",
-      "C+D=10"
-    ],
-    "question": "A×B-C×D=?",
-    "answer": 9,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 6, B = 5, C = 3, D = 7. 6×5 − 3×7 = 30 − 21 = 9."
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[3, 4, 14], [5, 2, 12], [6, 3, null]],
+    "prompt": "Find the missing number.",
+    "answer": 20,
+    "hint": "Multiply the first two columns, then add a constant offset.",
+    "explanation": "Col 3 = Col 1 × Col 2 + 2. For the last row: 6 × 3 + 2 = 20."
   },
   {
-    "id": "master_09",
-    "difficulty": "master",
+    "id": "t5_09",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 9,
-    "givens": [
-      "A+A+A=24",
-      "A-B=3",
-      "B×C=15",
-      "C+D=10"
-    ],
-    "question": "A+B×C+D=?",
-    "answer": 30,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 8, B = 5, C = 3, D = 7. 8 + 5×3 + 7 = 30."
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["4  ×  (  ?  −  1  )  =  28"],
+    "prompt": "Find the missing number.",
+    "answer": 8,
+    "hint": "Divide by 4 first.",
+    "explanation": "? − 1 = 28 ÷ 4 = 7, so ? = 8."
   },
   {
-    "id": "master_10",
-    "difficulty": "master",
+    "id": "t5_10",
+    "difficulty": "hard",
     "bucketIndex": 4,
     "orderInBucket": 10,
-    "givens": [
-      "A×A=64",
-      "A-B=3",
-      "B+C=11",
-      "C×D=18"
-    ],
-    "question": "A+B×C-D=?",
-    "answer": 35,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
-    "explanation": "A = 8, B = 5, C = 6, D = 3. 8 + 5×6 − 3 = 35."
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 15", "product = 54"],
+    "prompt": "Two numbers fit both clues — enter the smaller one.",
+    "answer": 6,
+    "hint": "Factor pairs of 54.",
+    "explanation": "The numbers are 6 and 9 (6 + 9 = 15, 6 × 9 = 54). The smaller is 6."
   },
   {
-    "id": "master_11",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 11,
-    "givens": [
-      "A×A=49",
-      "A-B=2",
-      "B×C=15",
-      "C+D=10"
-    ],
-    "question": "A+B×C+D=?",
-    "answer": 29,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
-    "explanation": "A = 7, B = 5, C = 3, D = 7. 7 + 5×3 + 7 = 29."
+    "id": "t6_01",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 1,
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["2,  4,  12,  48,  ?"],
+    "prompt": "Find the missing number.",
+    "answer": 240,
+    "hint": "The factor you multiply by increases step-by-step.",
+    "explanation": "The multipliers increase: ×2, ×3, ×4, so next is ×5. 48 × 5 = 240."
   },
   {
-    "id": "master_12",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 12,
-    "givens": [
-      "A+A+A+A=20",
-      "A×B=20",
-      "B+C=10",
-      "C-D=2"
-    ],
-    "question": "A+B×C-D=?",
-    "answer": 25,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 5, B = 4, C = 6, D = 4. 5 + 4×6 − 4 = 25."
+    "id": "t6_02",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 2,
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["24  :  8    ::    37  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 21,
+    "hint": "Multiply the digits of the input number together.",
+    "explanation": "2 × 4 = 8. For the second part: 3 × 7 = 21."
   },
   {
-    "id": "master_13",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 13,
-    "givens": [
-      "A+A+A=30",
-      "A+B=14",
-      "B×C=12",
-      "C+D=10"
-    ],
-    "question": "A×B-C×D=?",
-    "answer": 19,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 10, B = 4, C = 3, D = 7. 10×4 − 3×7 = 40 − 21 = 19."
-  },
-  {
-    "id": "master_14",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 14,
-    "givens": [
-      "A×A=36",
-      "A+B=10",
-      "B×C=12",
-      "C+D=10"
-    ],
-    "question": "A+B×C+D=?",
-    "answer": 25,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
-    "explanation": "A = 6, B = 4, C = 3, D = 7. 6 + 4×3 + 7 = 25."
-  },
-  {
-    "id": "master_15",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 15,
-    "givens": [
-      "A+B=10",
-      "A-B=4",
-      "B×C=12",
-      "C+D=11"
-    ],
-    "question": "A×B+C×D=?",
-    "answer": 49,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 7, B = 3, C = 4, D = 7. 7×3 + 4×7 = 21 + 28 = 49."
-  },
-  {
-    "id": "master_16",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 16,
-    "givens": [
-      "A+B=10",
-      "A-B=4",
-      "C+A=12",
-      "C×D=15"
-    ],
-    "question": "A+B×C-D=?",
-    "answer": 19,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 7, B = 3, C = 5, D = 3. 7 + 3×5 − 3 = 19."
-  },
-  {
-    "id": "master_17",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 17,
-    "givens": [
-      "A×A=25",
-      "A+B=11",
-      "B-C=2",
-      "C×D=12"
-    ],
-    "question": "A×B-C×D=?",
+    "id": "t6_03",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 3,
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[4, 5, 16], [5, 3, 10], [6, 4, null]],
+    "prompt": "Find the missing number.",
     "answer": 18,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
-    "explanation": "A = 5, B = 6, C = 4, D = 3. 5×6 − 4×3 = 30 − 12 = 18."
+    "hint": "Multiply the top two numbers, then subtract the top-left number.",
+    "explanation": "Bottom = (left × right) − left. For the last triangle: (6 × 4) − 6 = 18."
   },
   {
-    "id": "master_18",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 18,
-    "givens": [
-      "A+A+A+A=24",
-      "A×B=12",
-      "B+C=10",
-      "C-D=3"
-    ],
-    "question": "A×D+B×C=?",
-    "answer": 46,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 6, B = 2, C = 8, D = 5. 6×5 + 2×8 = 30 + 16 = 46."
+    "id": "t6_04",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 4,
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["4 → 20", "5 → 30", "6 → ?"],
+    "prompt": "Find the missing value.",
+    "answer": 42,
+    "hint": "Square the input number, then add the input number back.",
+    "explanation": "Rule: n² + n. For 6: 6² + 6 = 42."
   },
   {
-    "id": "master_19",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 19,
-    "givens": [
-      "A+B+C+D=20",
-      "A+B=11",
-      "A-B=3",
-      "C-D=1"
-    ],
-    "question": "A+B×C-D=?",
-    "answer": 23,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully.",
-    "explanation": "A = 7, B = 4, C = 5, D = 4. 7 + 4×5 − 4 = 23."
+    "id": "t6_05",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 5,
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["12,   23,   34,   45,   57"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 57,
+    "hint": "Find the sum of the digits of each number.",
+    "explanation": "Digit sums: 12 (3), 23 (5), 34 (7), 45 (9), 57 (12). All digit sums are odd except for 57."
   },
   {
-    "id": "master_20",
-    "difficulty": "master",
-    "bucketIndex": 4,
-    "orderInBucket": 20,
-    "givens": [
-      "A×A=100",
-      "A-B=3",
-      "B+C=10",
-      "C×D=12",
-      "D+E=10"
-    ],
-    "question": "A+B×C-D×E=?",
+    "id": "t6_06",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 6,
+    "displayType": "figure",
+    "figureType": "circle",
+    "cells": [[3, 4, 5, null], [6, 12, 20, 30]],
+    "prompt": "Find the missing number.",
+    "answer": 6,
+    "hint": "Opposite numbers relate through: bottom = top squared minus top.",
+    "explanation": "Bottom = top² − top: 3²−3=6, 4²−4=12, 5²−5=20, so for 30, the opposite is 6 (since 6²−6=30)."
+  },
+  {
+    "id": "t6_07",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 7,
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["3 # 4 = 15", "5 # 2 = 15", "6 # 3 = ?"],
+    "prompt": "Crack the rule, then solve.",
+    "answer": 21,
+    "hint": "Multiply the two numbers together, then add the first number.",
+    "explanation": "Rule: (a × b) + a. For the last line: (6 × 3) + 6 = 21."
+  },
+  {
+    "id": "t6_08",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 8,
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[3, 2, 11], [4, 5, 21], [5, 3, null]],
+    "prompt": "Find the missing number.",
+    "answer": 28,
+    "hint": "Square the first column and add the second column.",
+    "explanation": "Col 3 = Col 1² + Col 2. For the last row: 5² + 3 = 28."
+  },
+  {
+    "id": "t6_09",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 9,
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["6  ×  ?  −  7  =  35"],
+    "prompt": "Find the missing number.",
     "answer": 7,
-    "hint": "Four (or more) variables. Work each equation in order to find every value, then evaluate the question carefully. A square (A×A) appears — take the positive root.",
-    "explanation": "A = 10, B = 7, C = 3, D = 4, E = 6. 10 + 7×3 − 4×6 = 10 + 21 − 24 = 7."
+    "hint": "Add 7 first, then divide.",
+    "explanation": "35 + 7 = 42, then 42 ÷ 6 = 7."
+  },
+  {
+    "id": "t6_10",
+    "difficulty": "hard",
+    "bucketIndex": 5,
+    "orderInBucket": 10,
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 16", "product = 63"],
+    "prompt": "Two numbers fit both clues — enter the larger one.",
+    "answer": 9,
+    "hint": "Think of factors of 63 that sum to 16.",
+    "explanation": "The numbers are 7 and 9 (7 + 9 = 16, 7 × 9 = 63). The larger is 9."
+  },
+  {
+    "id": "t7_01",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 1,
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["2,  9,  28,  65,  ?"],
+    "prompt": "Find the missing number.",
+    "answer": 126,
+    "hint": "Think about perfect cubes.",
+    "explanation": "The sequence is perfect cubes plus 1: 1³+1, 2³+1, 3³+1, 4³+1. Next is 5³ + 1 = 126."
+  },
+  {
+    "id": "t7_02",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 2,
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["5  :  27    ::    7  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 51,
+    "hint": "Square the input, then add a small prime number constant.",
+    "explanation": "Rule: n² + 2. For the second part: 7² + 2 = 51."
+  },
+  {
+    "id": "t7_03",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 3,
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[2, 3, 13], [4, 1, 17], [5, 2, null]],
+    "prompt": "Find the missing number.",
+    "answer": 29,
+    "hint": "Square both top numbers of each triangle and sum them.",
+    "explanation": "Bottom = left² + right². For the last triangle: 5² + 2² = 25 + 4 = 29."
+  },
+  {
+    "id": "t7_04",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 4,
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["2 → 7", "4 → 13", "6 → ?"],
+    "prompt": "Find the missing value.",
+    "answer": 19,
+    "hint": "Multiply the input by 3, then add 1.",
+    "explanation": "Rule: 3n + 1. For 6: 3(6) + 1 = 19."
+  },
+  {
+    "id": "t7_05",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 5,
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["41,   43,   47,   53,   57"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 57,
+    "hint": "One of these numbers is divisible by 3.",
+    "explanation": "All numbers are prime except 57 (which is 3 × 19)."
+  },
+  {
+    "id": "t7_06",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 6,
+    "displayType": "figure",
+    "figureType": "magicTriangle",
+    "cells": [[5], [6, 7], [9, null, 8]],
+    "prompt": "Each side adds to the same total. Find the missing number.",
+    "answer": 3,
+    "hint": "Complete a full side first to find the target sum.",
+    "explanation": "Each side sums to 20. Left side: 5 + 6 + 9 = 20. Bottom: 9 + ? + 8 = 20, which gives ? = 3."
+  },
+  {
+    "id": "t7_07",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 7,
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["5 # 4 = 9", "6 # 2 = 32", "8 # 3 = ?"],
+    "prompt": "Crack the rule, then solve.",
+    "answer": 55,
+    "hint": "Multiply the sum of the numbers by the difference of the numbers.",
+    "explanation": "Rule: (a + b) × (a − b) = a² − b². For the last line: (8 + 3) × (8 − 3) = 11 × 5 = 55."
+  },
+  {
+    "id": "t7_08",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 8,
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[2, 3, 13], [4, 1, 11], [5, 4, null]],
+    "prompt": "Find the missing number.",
+    "answer": 22,
+    "hint": "Multiply the first column by 2, and the second column by 3, then sum them.",
+    "explanation": "Col 3 = Col 1 × 2 + Col 2 × 3. For the last row: 5 × 2 + 4 × 3 = 10 + 12 = 22."
+  },
+  {
+    "id": "t7_09",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 9,
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["(  ?  −  3  )  ×  7  =  42"],
+    "prompt": "Find the missing number.",
+    "answer": 9,
+    "hint": "Divide by 7 first, then add 3.",
+    "explanation": "? − 3 = 42 ÷ 7 = 6, so ? = 9."
+  },
+  {
+    "id": "t7_10",
+    "difficulty": "expert",
+    "bucketIndex": 6,
+    "orderInBucket": 10,
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 18", "product = 77"],
+    "prompt": "Two numbers fit both clues — enter the smaller one.",
+    "answer": 7,
+    "hint": "Factor pairs of 77.",
+    "explanation": "The numbers are 7 and 11 (7 + 11 = 18, 7 × 11 = 77). The smaller is 7."
+  },
+  {
+    "id": "t8_01",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 1,
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["2,  6,  9,  27,  30,  ?"],
+    "prompt": "Find the missing number.",
+    "answer": 90,
+    "hint": "This sequence alternates between multiplication and addition.",
+    "explanation": "The pattern is ×3, then +3: 2 (×3) = 6, 6 (+3) = 9, 9 (×3) = 27, 27 (+3) = 30, 30 (×3) = 90."
+  },
+  {
+    "id": "t8_02",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 2,
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["13  :  16    ::    16  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 13,
+    "hint": "Find the sum of the digits of the square of each number.",
+    "explanation": "13 squared is 169 (1 + 6 + 9 = 16). 16 squared is 256 (2 + 5 + 6 = 13)."
+  },
+  {
+    "id": "t8_03",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 3,
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[3, 2, 15], [4, 3, 28], [5, 4, null]],
+    "prompt": "Find the missing number.",
+    "answer": 45,
+    "hint": "Multiply the sum of the top two numbers by the left-hand top number.",
+    "explanation": "Bottom = (left + right) × left. For the last triangle: (5 + 4) × 5 = 45."
+  },
+  {
+    "id": "t8_04",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 4,
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["12 → 22", "34 → 44", "56 → ?"],
+    "prompt": "Find the missing value.",
+    "answer": 66,
+    "hint": "Reverse the digits of the input number, then add 1.",
+    "explanation": "12 reversed is 21 (+1) = 22. 34 reversed is 43 (+1) = 44. 56 reversed is 65 (+1) = 66."
+  },
+  {
+    "id": "t8_05",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 5,
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["3,   6,   10,   15,   21,   25"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 25,
+    "hint": "Check which numbers can be represented as triangular dot-grids.",
+    "explanation": "All numbers are triangular numbers (sum of consecutive integers) except 25."
+  },
+  {
+    "id": "t8_06",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 6,
+    "displayType": "figure",
+    "figureType": "magicSquare",
+    "cells": [[14, 7, 15], [13, 12, 11], [9, 17, null]],
+    "prompt": "Every row, column, and diagonal adds to the same total. Find the missing number.",
+    "answer": 10,
+    "hint": "First find the total of a complete line.",
+    "explanation": "Each line sums to 36. Bottom row: 9 + 17 + ? = 36, which gives ? = 10."
+  },
+  {
+    "id": "t8_07",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 7,
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["3 # 2 = 7", "4 # 3 = 13", "5 # 2 = ?"],
+    "prompt": "Crack the rule, then solve.",
+    "answer": 19,
+    "hint": "Square both numbers and add them, then subtract their product.",
+    "explanation": "Rule: a² + b² − ab. For the last line: 5² + 2² − (5 × 2) = 25 + 4 − 10 = 19."
+  },
+  {
+    "id": "t8_08",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 8,
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[4, 3, 13], [5, 6, 19], [6, 5, null]],
+    "prompt": "Find the missing number.",
+    "answer": 31,
+    "hint": "Square the first column and subtract the second column.",
+    "explanation": "Col 3 = Col 1² − Col 2. For the last row: 6² − 5 = 31."
+  },
+  {
+    "id": "t8_09",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 9,
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["8  ×  ?  −  15  =  49"],
+    "prompt": "Find the missing number.",
+    "answer": 8,
+    "hint": "Add 15 first.",
+    "explanation": "49 + 15 = 64, then 64 ÷ 8 = 8."
+  },
+  {
+    "id": "t8_10",
+    "difficulty": "expert",
+    "bucketIndex": 7,
+    "orderInBucket": 10,
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 20", "product = 96"],
+    "prompt": "Two numbers fit both clues — enter the larger one.",
+    "answer": 12,
+    "hint": "Factors of 96.",
+    "explanation": "The numbers are 8 and 12 (8 + 12 = 20, 8 × 12 = 96). The larger is 12."
+  },
+  {
+    "id": "t9_01",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 1,
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["2,  6,  15,  31,  56,  ?"],
+    "prompt": "Find the missing number.",
+    "answer": 92,
+    "hint": "The gaps between numbers are perfect squares.",
+    "explanation": "The differences are consecutive perfect squares: +2², +3², +4², +5², so next is +6² (+36). 56 + 36 = 92."
+  },
+  {
+    "id": "t9_02",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 2,
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["3  :  30    ::    4  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 68,
+    "hint": "Cube the input and add the input itself.",
+    "explanation": "Rule: n³ + n. For the second part: 4³ + 4 = 64 + 4 = 68."
+  },
+  {
+    "id": "t9_03",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 3,
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[5, 3, 16], [6, 2, 32], [7, 5, null]],
+    "prompt": "Find the missing number.",
+    "answer": 24,
+    "hint": "Square both top values of each triangle and find their difference.",
+    "explanation": "Bottom = left² − right². For the last triangle: 7² − 5² = 49 − 25 = 24."
+  },
+  {
+    "id": "t9_04",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 4,
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["23 → 25", "41 → 25", "52 → ?"],
+    "prompt": "Find the missing value.",
+    "answer": 35,
+    "hint": "Sum the digits of the input, then scale by 5.",
+    "explanation": "Rule: (digit 1 + digit 2) × 5. For 52: (5 + 2) × 5 = 35."
+  },
+  {
+    "id": "t9_05",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 5,
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["13,   21,   34,   55,   88"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 88,
+    "hint": "Check which of these belong to the standard Fibonacci sequence.",
+    "explanation": "All numbers are Fibonacci numbers except 88 (the actual Fibonacci number is 89)."
+  },
+  {
+    "id": "t9_06",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 6,
+    "displayType": "figure",
+    "figureType": "miniSudoku",
+    "cells": [[3, 1, 4, 2], [2, 4, 1, 3], [4, 2, 3, 1], [1, 3, 2, null]],
+    "prompt": "Each row and column holds 1–4 with no repeats. Find the missing number.",
+    "answer": 4,
+    "hint": "Look at row 4 and column 4.",
+    "explanation": "Row 4 contains 1, 3, 2, so the last cell must be 4."
+  },
+  {
+    "id": "t9_07",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 7,
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["4 # 3 = 6", "5 # 2 = 4", "6 # 4 = ?"],
+    "prompt": "Crack the rule, then solve.",
+    "answer": 15,
+    "hint": "Find the product, subtract the sum, then add 1.",
+    "explanation": "Rule: (a × b) − (a + b) + 1. For the last line: (6 × 4) − (6 + 4) + 1 = 24 − 10 + 1 = 15."
+  },
+  {
+    "id": "t9_08",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 8,
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[2, 3, 15], [4, 2, 12], [5, 4, null]],
+    "prompt": "Find the missing number.",
+    "answer": 36,
+    "hint": "Add the first two columns together, then multiply the sum by the second column.",
+    "explanation": "Col 3 = (Col 1 + Col 2) × Col 2. For the last row: (5 + 4) × 4 = 36."
+  },
+  {
+    "id": "t9_09",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 9,
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["(  ?  +  5  )  ×  ?  =  84"],
+    "prompt": "Find the missing number.",
+    "answer": 7,
+    "hint": "Find a positive integer that divides 84 and differs from its partner factor by 5.",
+    "explanation": "Since 12 × 7 = 84, and 7 + 5 = 12, the missing value is 7."
+  },
+  {
+    "id": "t9_10",
+    "difficulty": "master",
+    "bucketIndex": 8,
+    "orderInBucket": 10,
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 22", "product = 117"],
+    "prompt": "Two numbers fit both clues — enter the smaller one.",
+    "answer": 9,
+    "hint": "Factor pairs of 117.",
+    "explanation": "The numbers are 9 and 13 (9 + 13 = 22, 9 × 13 = 117). The smaller is 9."
+  },
+  {
+    "id": "t10_01",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 1,
+    "displayType": "sequence",
+    "sequenceType": "series",
+    "lines": ["1,  3,  7,  17,  41,  ?"],
+    "prompt": "Find the missing number.",
+    "answer": 99,
+    "hint": "Double the previous term and add the term before it.",
+    "explanation": "Rule: a_n = 2(a_n-1) + a_n-2. So, the next term is 2(41) + 17 = 99."
+  },
+  {
+    "id": "t10_02",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 2,
+    "displayType": "sequence",
+    "sequenceType": "analogy",
+    "lines": ["5  :  8    ::    6  :  ?"],
+    "prompt": "Complete the analogy.",
+    "answer": 9,
+    "hint": "Cube the input number, then find the sum of the digits of that cube.",
+    "explanation": "5 cubed is 125 (1 + 2 + 5 = 8). 6 cubed is 216 (2 + 1 + 6 = 9)."
+  },
+  {
+    "id": "t10_03",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 3,
+    "displayType": "figure",
+    "figureType": "triangle",
+    "cells": [[5, 4, 11], [6, 3, 9], [7, 5, null]],
+    "prompt": "Find the missing number.",
+    "answer": 23,
+    "hint": "Multiply the top two numbers of each triangle, then subtract their sum.",
+    "explanation": "Bottom = (left × right) − (left + right). For the last triangle: (7 × 5) − (7 + 5) = 35 − 12 = 23."
+  },
+  {
+    "id": "t10_04",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 4,
+    "displayType": "sequence",
+    "sequenceType": "coding",
+    "lines": ["1 → 13", "2 → 17", "3 → ?"],
+    "prompt": "Find the missing value.",
+    "answer": 23,
+    "hint": "Think about the prime formula n² + n + 11.",
+    "explanation": "Rule: n² + n + 11. For 3: 3² + 3 + 11 = 9 + 3 + 11 = 23."
+  },
+  {
+    "id": "t10_05",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 5,
+    "displayType": "sequence",
+    "sequenceType": "oddOneOut",
+    "lines": ["12,   23,   34,   45,   56"],
+    "prompt": "Enter the number that doesn't belong.",
+    "answer": 45,
+    "hint": "Look at the sum of the digits for each number. Find the one whose sum is not a prime number.",
+    "explanation": "Digit sums: 12 (3), 23 (5), 34 (7), 45 (9), 56 (11). All digit sums are prime except 45."
+  },
+  {
+    "id": "t10_06",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 6,
+    "displayType": "figure",
+    "figureType": "magicSquare",
+    "cells": [[18, 7, 20], [17, 15, 13], [10, 23, null]],
+    "prompt": "Every row, column, and diagonal adds to the same total. Find the missing number.",
+    "answer": 12,
+    "hint": "Determine the magic sum of a complete line first.",
+    "explanation": "Each line sums to 45. Bottom row: 10 + 23 + ? = 45, which gives ? = 12."
+  },
+  {
+    "id": "t10_07",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 7,
+    "displayType": "sequence",
+    "sequenceType": "operation",
+    "lines": ["3 # 2 = 19", "4 # 3 = 37", "5 # 4 = ?"],
+    "prompt": "Crack the rule, then solve.",
+    "answer": 61,
+    "hint": "Cube both numbers, then subtract the smaller cube from the larger.",
+    "explanation": "Rule: a³ − b³. For the last line: 5³ − 4³ = 125 − 64 = 61."
+  },
+  {
+    "id": "t10_08",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 8,
+    "displayType": "figure",
+    "figureType": "grid",
+    "cells": [[8, 6, 28], [9, 5, 56], [10, 7, null]],
+    "prompt": "Find the missing number.",
+    "answer": 51,
+    "hint": "Square the first column, then subtract the square of the second column.",
+    "explanation": "Col 3 = Col 1² − Col 2². For the last row: 10² − 7² = 100 − 49 = 51."
+  },
+  {
+    "id": "t10_09",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 9,
+    "displayType": "sequence",
+    "sequenceType": "missingNumber",
+    "lines": ["?²  −  ?  =  110"],
+    "prompt": "Find the missing number.",
+    "answer": 11,
+    "hint": "Find a positive number which, when multiplied by the number one less than itself, equals 110.",
+    "explanation": "11² − 11 = 121 − 11 = 110. (Alternatively, 11 × 10 = 110)."
+  },
+  {
+    "id": "t10_10",
+    "difficulty": "master",
+    "bucketIndex": 9,
+    "orderInBucket": 10,
+    "displayType": "sequence",
+    "sequenceType": "workBackwards",
+    "lines": ["sum = 25", "product = 154"],
+    "prompt": "Two numbers fit both clues — enter the larger one.",
+    "answer": 14,
+    "hint": "Look at factor pairs of 154.",
+    "explanation": "The numbers are 11 and 14 (11 + 14 = 25, 11 × 14 = 154). The larger is 14."
   }
 ]

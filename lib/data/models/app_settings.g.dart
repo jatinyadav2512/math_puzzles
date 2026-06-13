@@ -12,6 +12,8 @@ _$AppSettingsImpl _$$AppSettingsImplFromJson(Map<String, dynamic> json) =>
           ThemeMode.dark,
       soundEnabled: json['soundEnabled'] as bool? ?? true,
       hapticsEnabled: json['hapticsEnabled'] as bool? ?? true,
+      isPremium: json['isPremium'] as bool? ?? false,
+      premiumExpiryDateMs: (json['premiumExpiryDateMs'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$$AppSettingsImplToJson(_$AppSettingsImpl instance) =>
@@ -19,6 +21,8 @@ Map<String, dynamic> _$$AppSettingsImplToJson(_$AppSettingsImpl instance) =>
       'themeMode': _$ThemeModeEnumMap[instance.themeMode]!,
       'soundEnabled': instance.soundEnabled,
       'hapticsEnabled': instance.hapticsEnabled,
+      'isPremium': instance.isPremium,
+      'premiumExpiryDateMs': instance.premiumExpiryDateMs,
     };
 
 const _$ThemeModeEnumMap = {

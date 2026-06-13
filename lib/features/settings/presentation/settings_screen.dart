@@ -8,6 +8,8 @@ import 'package:math_riddles/providers/app_state.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:math_riddles/data/services/purchase_service.dart';
+import 'package:math_riddles/presentation/widgets/premium_info_modal.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -52,6 +54,42 @@ class SettingsScreen extends StatelessWidget {
               appState.updateSettings(settings.copyWith(hapticsEnabled: value));
             },
             activeColor: AppColors.brandPrimary,
+          ),
+          const SizedBox(height: AppSpacing.s6),
+          _SectionHeader(title: 'PREMIUM', colors: colors),
+          ListTile(
+            title: Text(
+              appState.settings.isPremium ? 'Premium Active' : 'Get Premium (₹299)',
+              style: AppTextStyles.bodyEmphasis.copyWith(color: colors.onSurface),
+            ),
+            trailing: appState.settings.isPremium 
+              ? Icon(Icons.check_circle, color: colors.success)
+              : null,
+            onTap: () {
+              if (!appState.settings.isPremium) {
+                showModalBottomSheet<void>(
+                  context: context,
+                  isScrollControlled: true,
+                  builder: (context) => const PremiumInfoModal(),
+                );
+              }
+            },
+          ),
+          ListTile(
+            title: Text(
+              'Restore Purchases',
+              style: AppTextStyles.bodyEmphasis.copyWith(color: colors.onSurface),
+            ),
+            onTap: () async {
+              await PurchaseService().restorePurchases();
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Purchase restore request sent.'),
+                  ),
+                );
+              }
+            },
           ),
           const SizedBox(height: AppSpacing.s6),
           _SectionHeader(title: 'PROGRESS', colors: colors),

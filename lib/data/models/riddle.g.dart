@@ -74,6 +74,70 @@ Map<String, dynamic> _$$TrianglePatternRiddleImplToJson(
       'displayType': instance.$type,
     };
 
+_$SequenceRiddleImpl _$$SequenceRiddleImplFromJson(Map<String, dynamic> json) =>
+    _$SequenceRiddleImpl(
+      id: json['id'] as String,
+      difficulty: $enumDecode(_$DifficultyEnumMap, json['difficulty']),
+      bucketIndex: (json['bucketIndex'] as num).toInt(),
+      orderInBucket: (json['orderInBucket'] as num).toInt(),
+      sequenceType: json['sequenceType'] as String,
+      lines: (json['lines'] as List<dynamic>).map((e) => e as String).toList(),
+      prompt: json['prompt'] as String,
+      answer: (json['answer'] as num).toInt(),
+      hint: json['hint'] as String,
+      explanation: json['explanation'] as String,
+      $type: json['displayType'] as String?,
+    );
+
+Map<String, dynamic> _$$SequenceRiddleImplToJson(
+        _$SequenceRiddleImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'difficulty': _$DifficultyEnumMap[instance.difficulty]!,
+      'bucketIndex': instance.bucketIndex,
+      'orderInBucket': instance.orderInBucket,
+      'sequenceType': instance.sequenceType,
+      'lines': instance.lines,
+      'prompt': instance.prompt,
+      'answer': instance.answer,
+      'hint': instance.hint,
+      'explanation': instance.explanation,
+      'displayType': instance.$type,
+    };
+
+_$FigureRiddleImpl _$$FigureRiddleImplFromJson(Map<String, dynamic> json) =>
+    _$FigureRiddleImpl(
+      id: json['id'] as String,
+      difficulty: $enumDecode(_$DifficultyEnumMap, json['difficulty']),
+      bucketIndex: (json['bucketIndex'] as num).toInt(),
+      orderInBucket: (json['orderInBucket'] as num).toInt(),
+      figureType: json['figureType'] as String,
+      cells: (json['cells'] as List<dynamic>)
+          .map((e) =>
+              (e as List<dynamic>).map((e) => (e as num?)?.toInt()).toList())
+          .toList(),
+      prompt: json['prompt'] as String,
+      answer: (json['answer'] as num).toInt(),
+      hint: json['hint'] as String,
+      explanation: json['explanation'] as String,
+      $type: json['displayType'] as String?,
+    );
+
+Map<String, dynamic> _$$FigureRiddleImplToJson(_$FigureRiddleImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'difficulty': _$DifficultyEnumMap[instance.difficulty]!,
+      'bucketIndex': instance.bucketIndex,
+      'orderInBucket': instance.orderInBucket,
+      'figureType': instance.figureType,
+      'cells': instance.cells,
+      'prompt': instance.prompt,
+      'answer': instance.answer,
+      'hint': instance.hint,
+      'explanation': instance.explanation,
+      'displayType': instance.$type,
+    };
+
 _$TriangleCellImpl _$$TriangleCellImplFromJson(Map<String, dynamic> json) =>
     _$TriangleCellImpl(
       left: (json['left'] as num).toInt(),
