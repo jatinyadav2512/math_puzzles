@@ -31,6 +31,7 @@ class _RiddleScreenState extends State<RiddleScreen>
     with SingleTickerProviderStateMixin {
   String _typedAnswer = '';
   bool _showHint = false;
+  bool _isLoadingAd = false;
   late final AnimationController _shakeController;
   late final Animation<double> _shakeAnimation;
   late final ConfettiController _confettiController;
@@ -463,6 +464,31 @@ class _RiddleScreenState extends State<RiddleScreen>
             ],
           ),
         ),
+        if (_isLoadingAd)
+          Positioned.fill(
+            child: Material(
+              type: MaterialType.transparency,
+              child: Container(
+                color: Colors.black54,
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const CircularProgressIndicator(color: Colors.white),
+                      const SizedBox(height: AppSpacing.s4),
+                      Text(
+                        'Loading Ad...',
+                        style: AppTextStyles.body.copyWith(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
       ],
     );
   }
@@ -484,13 +510,14 @@ class _RiddleScreenState extends State<RiddleScreen>
     final adService = context.read<AdService>();
 
     if (action == 'hint_ad' || action == 'solution_ad') {
+      setState(() => _isLoadingAd = true);
       final success = await adService.showRewardedAd();
+      if (!mounted) return;
+      setState(() => _isLoadingAd = false);
       if (!success) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Failed to load ad or ad was dismissed.')),
-          );
-        }
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Failed to load ad or ad was dismissed.')),
+        );
         return;
       }
     }

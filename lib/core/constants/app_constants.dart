@@ -7,7 +7,7 @@ class AppConstants {
 
   // Pending — decide before Phase 7
   static const String privacyPolicyUrl =
-      'https://docs.google.com/document/d/e/2PACX-1vR_eFhhnbrCpY4E6DUn0tx5kMEdCvBwOnDQryRamoU7OSSEjNApywT6vSgwMhRkAOuuqufg0e45r1Jq/pub';
+      'https://math-puzzles-a88e1.web.app/privacy.html';
   static const String playStoreUrl = '';
 
   static const int bucketCount = 10;
